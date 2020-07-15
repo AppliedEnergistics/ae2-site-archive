@@ -1,0 +1,417 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/docs/rv2/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:39:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>docs - rv2 - release notes - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/docs/rv2/release-notes/favicon.png" />
+		<meta name="description" content="Applied Energistics is a Minecraft Mod which contains an advanced storage system called ME that lets you store items compactly and in the way you want, as well as do intricate automation."/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/site.js"></script>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/site.css" rel="stylesheet">
+    <link href="../../../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../../../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../../../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../../../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/docs/rv2/release-notes/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <div id="WikiContent"><div class="container">
+		<div id="PageOptions">
+																	<a title="Print this Page" onclick="window.print();" class="IconPrint"><span class="glyphicon glyphicon-print"></span></a>
+		</div><!-- unable to find docs -->			<p><!-- ItemPart.CableSmart--><!-- ItemPart.CableSmart--><!-- ItemPart.CableDense--><!-- ItemPart.CableDense--><!-- BlockController--><!-- BlockController--><!-- ItemMaterial.CardSpeed--><!-- ItemMaterial.CardSpeed--><!-- BlockInscriber--><!-- BlockInscriber--><!-- BlockSkyCompass--><!-- BlockSkyCompass--><!-- ItemPart.InterfaceTerminal--><!-- ItemPart.InterfaceTerminal--><!-- BlockQuartzPillar--><!-- BlockQuartzPillar--><!-- BlockQuartzChiseled--><!-- BlockQuartzChiseled--><!-- BlockQuartz--><!-- BlockQuartz--><!-- BlockFluix--><!-- BlockFluix--><!-- BlockSkyStone.SmallBrick--><!-- BlockSkyStone.SmallBrick--><!-- BlockSkyStone.Brick--><!-- BlockSkyStone.Brick--><!-- BlockSkyStone.Block--><!-- BlockSkyStone.Block--><!-- BlockSkyStone--><!-- BlockSkyStone--><h1>Applied Energistics RV2 Release Notes</h1>
+<p>AE2 RV2 is a&nbsp;migration version to familiarize ourselves with&nbsp;the inherited code made by <a href="../../../Important-Message/index.html" target="_blank">AlgorithmX2</a>, focusing mainly on bug-fixing and making it an Open-Source-Software.</p>
+<p>We offer a new issue and code management on <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2" target="_blank">Github</a>&nbsp;and&nbsp;supply the latest version via&nbsp;<a href="http://ci.tsr.me/viewType.html?buildTypeId=AppliedEnergistics_AutoHeadBuild&amp;branch_AppliedEnergistics=%3Cdefault%3E&amp;tab=buildTypeStatusDiv" target="_blank">TeamCity</a>.&nbsp;</p>
+<p>We&nbsp;added over 500 quality-increasing changes and fixed over the course of the last half year more than 100 bugs. The most important ones are listed below. One of the most requested features was the optional disabling&nbsp;of the channel mechanics. AlgorithmX2 shed his last blood and tears into finishing&nbsp;it, before tossing the project onto us.</p>
+<p>We want to thank you for accepting us and supporting the new&nbsp;developer team!</p>
+<p>&nbsp;</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="index.html#changes-improvements-and-features">Changes, Improvements and Features</a><br />
+<ul>
+<li><a href="index.html#config-option-for-infinite-channels">Config option for infinite channels</a></li>
+<li><a href="index.html#colored-crafting-status">Colored&nbsp;crafting status</a></li>
+<li><a href="index.html#upgradable-inscriber">Upgradable Inscriber</a></li>
+<li><a href="index.html#achievements">Achievements</a></li>
+<li><a href="index.html#interface-terminal-filtering">Interface terminal filtering</a></li>
+<li><a href="index.html#stairs">Stairs</a></li>
+<li><a href="index.html#noteworthy">Noteworthy</a></li>
+<li><a href="index.html#code-quality">Code quality</a></li>
+<li><a href="index.html#localization">Localization</a></li>
+</ul>
+</li>
+<li><a href="index.html#fixed-issues">Fixed issues</a></li>
+<li><a href="index.html#deprecation">Deprecation</a><br />
+<ul>
+<li><a href="index.html#renamed-istoragecell-bytepertype">Renamed IStorageCell.BytePerType( ItemStack )</a></li>
+<li><a href="index.html#deprecated-aeitemdefinition">Deprecated AEItemDefinition</a></li>
+<li><a href="index.html#deprecated-upgrades-tier">Deprecated Upgrades.tier</a></li>
+<li><a href="index.html#deprecated-upgrades-supportedmax">Deprecated Upgrades.supportedMax</a></li>
+<li><a href="index.html#deprecated-upgrades-registeritem">Deprecated Upgrades.registerItem( AEItemDefinition, int )</a></li>
+<li><a href="index.html#deprecated-ilocatableregistry">Deprecated ILocatableRegistry.findLocatableBySerial( long )</a></li>
+</ul>
+</li>
+<li><a href="index.html#breaking-changes">Breaking changes</a><br />
+<ul>
+<li><a href="index.html#inscriber-api">Inscriber API</a></li>
+<li><a href="index.html#removal-of-mj">Removal of MJ</a></li>
+</ul>
+</li>
+<li><a href="index.html#known-issues">Known Issues</a></li>
+</ul>
+<p>&nbsp;</p>
+<h1><a id="changes-improvements-and-features"></a>Changes, Improvements and Features</h1>
+<p>&nbsp;</p>
+<h2><a id="config-option-for-infinite-channels"></a>Config option for infinite channels (<a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>)</h2>
+<p>The channel mechanics were introduced in AE2 as a way to add depth to the gameplay, with the idea of enabling an easy setup, while at the same time rewarding people who put thought into their network. The config option for infinite channels was a planned feature from the beginning, but he wanted to give people time to adjust to the system before declaring it bad on prejudices.</p>
+<p>The config option will disable any channel related features, including <a name="inlineItemDescItemPartCableSmart_link" class="inlineItem" href="../../../ME-Smart-Cable/index.html">ME Smart Cable</a>,&nbsp;<a name="inlineItemDescItemPartCableDense_link" class="inlineItem" href="../../../ME-Dense-Cable/index.html">ME Dense Cable</a> and&nbsp;<a name="inlineItemDescBlockController_link" class="inlineItem" href="../../../ME-Controller/index.html">ME Controller</a> and any Achievements related to channels.</p>
+<p><strong>Important:&nbsp;</strong></p>
+<ul>
+<li>we deliver a dynamic recipe management system to modify recipes. Disabled recipes due to missing ingredients are currently not replaced. More information <a href="../../../Custom-Recipes/index.html" target="_blank">here</a>.</li>
+<li>make a backup of your world before changing this option</li>
+</ul>
+<p>&nbsp;</p>
+<h2><a id="colored-crafting-status"></a>Colored crafting status (<a href="https://github.com/Eearslya" target="_blank">Eearslya</a>)</h2>
+<p>The colored crafting status indicates whether a crafting is currently scheduled or active.</p>
+<h3>Status</h3>
+<p><img src="../../../assets/content/crafting-status.png" alt="Crafting Status" width="476" height="368" /></p>
+<h3>Config (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h3>
+<p>Added a config option to disable that feature.</p>
+<p>&nbsp;</p>
+<h2><a id="upgradable-inscriber"></a>Upgradable Inscriber&nbsp;(<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>You can add&nbsp;<a name="inlineItemDescItemMaterialCardSpeed_link" class="inlineItem" href="../../../Acceleration-Card/index.html">Acceleration Card</a> into the&nbsp;<a name="inlineItemDescBlockInscriber_link" class="inlineItem" href="../../../Inscriber/index.html">Inscriber</a> to increase its processing speed.</p>
+<p><img src="../../../assets/content/upgradable-inscriber.png" alt="Upgradable Inscriber" width="476" height="193" /></p>
+<p>&nbsp;</p>
+<h2><a id="achievements"></a>Achievements (<a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>)</h2>
+<p>25 Achievements were added related to Applied Energistics 2. You&nbsp;start with using the <a name="inlineItemDescBlockSkyCompass_link" class="inlineItem" href="../../../Meteorite-Compass/index.html">Meteorite Compass</a>&nbsp;to find meteors and end with&nbsp;the epitome of ME, the <a href="../../../ME-Quantum-Network-Bridge/index.html" target="_blank">QNB</a>.</p>
+<p><img src="../../../assets/content/achievements.png" alt="Achievements" width="476" height="376" />&nbsp;</p>
+<p>&nbsp;</p>
+<h2><a id="interface-terminal-filtering"></a>Interface terminal filtering (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>Now <a name="inlineItemDescItemPartInterfaceTerminal_link" class="inlineItem" href="../../../ME-Interface-Terminal/index.html">ME Interface Terminals</a> have a search field, where you can search&nbsp;in various ways.</p>
+<h3>Search by pattern</h3>
+<p><img src="../../../assets/content/search-by-pattern.png" alt="Search by pattern" width="476" height="322" /></p>
+<h3>Search by machine</h3>
+<p><img src="../../../assets/content/search-by-machine.png" alt="Search by machine" width="476" height="322" /></p>
+<p>&nbsp;</p>
+<h2><a id="stairs"></a>Stairs&nbsp;(<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>Added a stair for each block in AE2.</p>
+<p>(from left to right)</p>
+<ul>
+<li><a name="inlineItemDescBlockQuartzPillar_link" class="inlineItem" href="../../../Certus-Quartz-Pillar/index.html">Certus Quartz Pillar</a></li>
+<li><a name="inlineItemDescBlockQuartzChiseled_link" class="inlineItem" href="../../../Chiseled-Certus-Quartz-Block/index.html">Chiseled Certus Quartz Block</a></li>
+<li><a name="inlineItemDescBlockQuartz_link" class="inlineItem" href="../../../Certus-Quartz-Block/index.html">Certus Quartz Block</a></li>
+<li><a name="inlineItemDescBlockFluix_link" class="inlineItem" href="../../../Fluix-Block/index.html">Fluix Block</a></li>
+<li><a name="inlineItemDescBlockSkyStoneSmallBrick_link" class="inlineItem" href="../../../Sky-Stone-Small-Brick/index.html">Sky Stone Small Brick</a></li>
+<li><a name="inlineItemDescBlockSkyStoneBrick_link" class="inlineItem" href="../../../Sky-Stone-Brick/index.html">Sky Stone Brick</a></li>
+<li><a name="inlineItemDescBlockSkyStoneBlock_link" class="inlineItem" href="../../../Sky-Stone-Block/index.html">Sky Stone Block</a></li>
+<li><a name="inlineItemDescBlockSkyStone_link" class="inlineItem" href="../../../Sky-Stone/index.html">Sky Stone</a></li>
+</ul>
+<p><img src="../../../assets/content/stairs.png" alt="Stairs" width="476" height="252" /></p>
+<p>&nbsp;</p>
+<h2><a id="noteworthy"></a>Noteworthy</h2>
+<p>Not less important, but less applicable to show-case:</p>
+<ul>
+<li><a href="https://github.com/mstiles92" target="_blank">mstiles92</a>: Prevent the search box from losing focus in Auto Search and NEI Synchronized Auto Search modes.</li>
+<li><a href="https://github.com/cjo9900" target="_blank">cjo9900</a>: Change Crafting card recipe to shapeless.</li>
+<li><a href="https://github.com/thepaperpilot" target="_blank">The Paper Pilot</a>: Crafting Terminal requires Crafting Permissions, otherwise it will open a normal terminal.</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: API jars contain now classes and source files. Updated dependencies also use those.</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>:&nbsp;Added harvest level of wrenches and network tools to 'wrench'.</li>
+<li><a href="https://github.com/Cisien" target="_blank">Cisien</a>: Add config option to whitelist dimensions for meteorite gen.</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Add oredict entry for pure fluix crystals as crystalPureFluix.</li>
+<li><a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Drop crank if fake player uses it.</li>
+<li><a href="https://github.com/riking" target="_blank">riking</a>: Use the player's inventory to handle NEI fills.</li>
+<li><a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Changed Sounds + Materials + aligned to vanilla.</li>
+<li><a href="https://github.com/yueh" target="_blank">yueh</a>: Removed buffer from annihilation plane.</li>
+<li><a href="https://github.com/yueh" target="_blank">yueh</a>: Formation plane can now drop blocks as items.</li>
+<li><a href="https://github.com/thepaperpilot" target="_blank">The Paper Pilot</a>: Now anyone can open ME chests, but if there is a security terminal on the network, you must have withdraw or deposit permissions in order to extract or inject items, respectively.</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Added zinc to the grindstone, which is part of Flaxbeards Steam Power (FSP).</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Improved GUIs for localization.</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Improved WAILA for resource packs</li>
+<li><a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Wireless Terminal notifies player, if it is unlinked</li>
+</ul>
+<p>&nbsp;</p>
+<h2><a id="code-quality"></a>Code quality</h2>
+<p>Over 500 changes were made to improve the overall code quality for the developer and user, including many&nbsp;typographical and grammatical errors.&nbsp;</p>
+<p>Credits to <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>, <a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>, <a href="https://github.com/Cisien" target="_blank">Cisien</a>, <a href="https://github.com/yueh" target="_blank">yueh</a>, <a href="https://github.com/FireBall1725" target="_blank">FireBall1725</a>, <a href="https://github.com/KamranMackey" target="_blank">Kamran Mackey</a>, <a href="https://github.com/LeerSpace" target="_blank">John Reed</a>, <a href="https://github.com/61352151511" target="_blank">Mitchell</a>&nbsp;and more.</p>
+<p>&nbsp;</p>
+<h2><a id="localization"></a>Localization</h2>
+<p>We rely on external contributions for localizations.</p>
+<p>Here we want to thank <a href="https://github.com/bakaxyf" target="_blank">bakaxyf</a>, <a href="https://github.com/Adaptivity" target="_blank">Anton</a>, <a href="https://github.com/TheVikingWarrior" target="_blank">TheVikingWarrior</a>, <a href="https://github.com/theelixzammuto" target="_blank">theelixzammuto</a>, <a href="https://github.com/Mazdallier" target="_blank">Yves</a>,&nbsp;<a href="https://github.com/al-myr" target="_blank">Al</a>&nbsp;and more than&nbsp;25&nbsp;changes in over 6 different languages, them being:</p>
+<ul>
+<li>Simplified Chinese</li>
+<li>Russian</li>
+<li>Italian</li>
+<li>French</li>
+<li>Brazilian Portuguese</li>
+<li>Korean</li>
+</ul>
+<p>If you do not see your language here, feel free to improve it by submitting your changes to us.</p>
+<p>&nbsp;</p>
+<h1><a id="fixed-issues"></a>Fixed issues</h1>
+<ul>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1360" target="_blank">GH-1360</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Added missing check to detect missing cell workbenches</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1068" target="_blank">GH-1068</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Prevents fixtures modifying grass</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1125" target="_blank">GH-1125</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Prevent matrix frames being destroyed by&nbsp;explosions</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/242" target="_blank">GH-0242</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Prevent matrix frames from being placeable</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/358" target="_blank">GH-0358</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Add check when placing multiblocks near the sky limit or bedrock level</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/366" target="_blank">GH-0366</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Prevent anything but boosters inside WAPs</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/0446/" target="_blank">GH-0446</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: AE2 update comparators</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/679" target="_blank">PR-0679</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Effects should not collide with anything, increases FPS</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1336/" target="_blank">GH-1336</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed part interface inventory model</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1327/" target="_blank">GH-1327</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Prevent crash when configuring a GUI</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1186/" target="_blank">GH-1186</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Storage Cells drop upgrades upon disassembling</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/0456/" target="_blank">GH-0456</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed interface dropping items into itself</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/1205" target="_blank">PR-1205</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixed NPE on random button smashing</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1059/" target="_blank">GH-1059</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: FMP Blocks don't disturb the ME Interface</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/1199" target="_blank">PR-1199</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixed interaction bug between Sky Stone Chest and Inventory Tweaks upon sort via space + click</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/0889/" target="_blank">GH-0889</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed possible dupe bug</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1013" target="_blank">GH-1013</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Energy acceptor can receive RotaryCraft Power again</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1061" target="_blank">GH-1061</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Most recipes are properly registered with new Mekanism.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1076" target="_blank">GH-1076</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Crash on shift clicking a recipe from NEI</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1077" target="_blank">GH-1077</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Opening a terminal will not crash as fast anymore in systems with many items.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/822" target="_blank">GH-0822</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Automation of IO Port works as intended again</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/976" target="_blank">GH-0976</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Uses GitHub to retrieve most current version</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1030" target="_blank">GH-1030</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: IndexOutOfBoundsException caused by using wrong index</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1015" target="_blank">GH-1015</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: No longer eat a single item when not able to satisfy the recipe</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1011" target="_blank">GH-1011</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: skip null values</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/920" target="_blank">GH-0920</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Increased GUI close distance to Vanilla MC</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/743" target="_blank">GH-0743</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixes crash with BC plugs</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/942" target="_blank">GH-0942</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixes BC&nbsp;builder integration</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/972" target="_blank">GH-0972</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Tooltip now corresponds to the actual behaviour</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/910" target="_blank">GH-0910</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Report the correct hitbox to FMP</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/855" target="_blank">PR-0855</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed cable render crash and covered cables render as smart</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/701" target="_blank">GH-0701</a>] <a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Changed harvest tool to axe</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/666" target="_blank">GH-0666</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Only convert to a cablebus if an IPartItem is attached</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/659" target="_blank">GH-0659</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: NPE on usage of the FZ sculpting tool</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/624" target="_blank">GH-0624</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Missing check to disable features</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/572" target="_blank">GH-0572</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Enable inventory validation for any kind of Player</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/604" target="_blank">GH-0604</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Crash on crafting</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/549" target="_blank">GH-0549</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Triggers missing power event</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/547" target="_blank">GH-0547</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed overstocking items with export bus/interface</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/524" target="_blank">GH-0524</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixes missing energy animation on BC Kinesis Pipes</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/535" target="_blank">GH-0535</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Remove tags in tag compound in inventories of cells if they are not needed anymore</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/348" target="_blank">GH-0348</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Respecting the inventory stack limit</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/501" target="_blank">PR-0501</a>] <a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Fixed wrong sounds</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/383" target="_blank">GH-0383</a>] <a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Fixed 3D on powered items</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/473" target="_blank">GH-0473</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Prevents server crashing based on UUIDs of the player</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/457" target="_blank">PR-0457</a>] <a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Fix tiny TNT stuff</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/449" target="_blank">GH-0449</a>] <a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Removing placing-block-animation of WAT</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/260" target="_blank">GH-0260</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Catching a null node</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/287" target="_blank">GH-0287</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixed duping with portable cell</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/421" target="_blank">PR-0421</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixes condenser dupe bug</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/354" target="_blank">GH-0354</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Changed searge name lead to regressed compability with Immibis-MB</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/376" target="_blank">GH-0376</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: IO Port now dropping upgrades properly</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/316" target="_blank">GH-0316</a>] <a href="https://github.com/Cisien" target="_blank">Cisien</a>: Fixed certus worldgen</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/300" target="_blank">GH-0300</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixed search-box click area</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/309" target="_blank">GH-0309</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed dupe bug using items with NBT using the crafting terminal</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/298" target="_blank">GH-0298</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed duping of damaged items in the crafting terminal</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/269" target="_blank">GH-0269</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed cable facades not rendering on the bottom side</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/288" target="_blank">GH-0288</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Fixed&nbsp;cable loosing its parts</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/225" target="_blank">GH-0225</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Fixed not returning correct size per type of 8, 32, 128, 512 instead of constant 8</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/209" target="_blank">GH-0209</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Inverted damage bar of tools</li>
+<li>[AE-xxxx] <a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>: Fixed a memory leak with GridStorage</li>
+<li>[<a href="../../../Tracker/1133/index.html" target="_blank">AE-1133</a>] <a href="https://github.com/ongy" target="_blank">Ongy</a>: Fixed crafting priority not working</li>
+<li>[<a href="../../../Tracker/880/index.html" target="_blank">AE-0880</a>] <a href="https://github.com/thepaperpilot" target="_blank">The Paper Pilot</a>: Fixed ME Chest can't be protected by ME Security Terminal</li>
+<li>[<a href="../../../Tracker/1138/index.html" target="_blank">AE-1138</a>] <a href="https://github.com/Kolatra" target="_blank">Kolatra</a>: Fixed recipe for flour in pulverizer not working</li>
+<li>[AE-xxxx] <a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>: Close GUI when Monitor Returns a new Handler, closes Chest GUI when cell is removed</li>
+<li>[AE-xxxx] <a href="https://github.com/AlgorithmX2" target="_blank">AlgorithmX2</a>: Prevent calling client only localization method on server</li>
+</ul>
+<p>&nbsp;</p>
+<h1><a id="deprecation"></a>Deprecation</h1>
+<p>Deprecated features are scheduled for removal in RV3 Stable.</p>
+<p>&nbsp;</p>
+<h2><a id="renamed-istoragecell-bytepertype"></a>Renamed IStorageCell.BytePerType( ItemStack )</h2>
+<p>Was renamed to IStorageCell.getBytePerType( ItemStack )</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-aeitemdefinition"></a>Deprecated AEItemDefinition</h2>
+<p>It is encouraged to use the new <strong>IDefinitions</strong>.&nbsp;</p>
+<p>The corresponding code for developers can be found <a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/definitions/IDefinitions.java#L30-30" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-upgrades-tier"></a>Deprecated Upgrades.tier</h2>
+<p>Use&nbsp;<code><strong><a href="../../../javadoc/appeng/api/config/Upgrades.html#getTier()" target="_blank">Upgrades.getTier()</a></strong></code>&nbsp;instead.</p>
+<p>The corresponding code for developers can be found <a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/config/Upgrades.java#L126" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-upgrades-supportedmax"></a>Deprecated Upgrades.supportedMax</h2>
+<p>Use&nbsp;<code><a href="../../../javadoc/appeng/api/config/Upgrades.html#getSupported()" target="_blank">Upgrades.getSupported()</a></code>&nbsp;instead.</p>
+<p>The corresponding code for developers can be found&nbsp;<a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/config/Upgrades.java#L70" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-upgrades-registeritem"></a>Deprecated Upgrades.registerItem( AEItemDefinition, int )</h2>
+<p>Use&nbsp;<code><a href="../../../javadoc/appeng/api/config/Upgrades.html#registerItem(appeng.api.definitions.IItemDefinition,%20int)" target="_blank">Upgrades.registerItem( IItemDefinition, int )</a>&nbsp;or <a href="../../../javadoc/appeng/api/config/Upgrades.html#registerItem(net.minecraft.item.ItemStack,%20int)" target="_blank">Upgrades.registerItem( ItemStack, int )</a></code>&nbsp;instead.</p>
+<p>The corresponding code for developers can be found&nbsp;<a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/config/Upgrades.java#L81" target="_blank">here</a>&nbsp;and <a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/config/Upgrades.java#L96" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-ilocatableregistry"></a>Deprecated&nbsp;ILocatableRegistry.findLocatableBySerial( long )</h2>
+<p>Use <code><a href="../../../javadoc/appeng/api/features/ILocatableRegistry.html#getLocatableBy(long)" target="_blank">ILocatableRegistry.getLocatableBy( long )</a></code> instead. It will returrn an <code><a href="../../../javadoc/appeng/api/features/ILocatable.html" target="_blank">ILocatable</a></code>.</p>
+<p>The corresponding code for developers can be found&nbsp;<a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/features/ILocatableRegistry.java#L52-52" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><a id="breaking-changes"></a>Breaking changes</h1>
+<h2><a id="inscriber-api"></a>Inscriber API (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>In earlier versions, mods like MineTweaker had to&nbsp;<em>hack</em> into our code, to retrieve the data for inscribers, to modify the recipes or inject new recipes.&nbsp;</p>
+<p>The corresponding code for developers can be found <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/features/IInscriberRegistry.java" target="_blank">here</a>.</p>
+<p><strong>Important:</strong></p>
+<ul>
+<li>You may need to update mods like MineTweaker.</li>
+</ul>
+<p>&nbsp;</p>
+<h2><a id="removal-of-mj"></a>Removal of MJ (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>&nbsp;AE2 cannot accept MJ from old BuildCraft as a power source anymore. Any references to MJ, in code or otherwise, were deleted. This includes display of current energy based on MJ.</p>
+<p><strong>Important:</strong></p>
+<ul>
+<li>If you used an old BuildCraft or any other MJ producing mods to power AE2, you will need to replace the power source.</li>
+</ul>
+<p>&nbsp;</p>
+<h1><a id="known-issues"></a>Known issues</h1>
+<p>All known issues are listed on the tracker marked with <strong>type-bug</strong>&nbsp;in our <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues?q=is%3Aopen+is%3Aissue+label%3Atype-bug" target="_blank">issue-tracker</a>.</p></p>
+			<table class="AvatarBox" width="100%"><tr>
+				<td style="text-align:right;">Last modified on 05/19/2015 01:10 AM CDT<br/>By thatsIch</td>
+				<td width="55"><div class="aAvatar" style="background-image:url(../../../images/users/a.thatsich.jpg);"></div></td>
+			</tr></table>
+		</div></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../../../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<div style="max-width:400px;" id="inlineItemDescItemPartCableSmart" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Smart Cable" href="../../../ME-Smart-Cable/index.html" class="large large_parts_ItemPart_CableSmart"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Smart Cable</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartCableDense" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Dense Cable" href="../../../ME-Dense-Cable/index.html" class="large large_parts_ItemPart_CableDense"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Dense Cable</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockController" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Controller" href="../../../ME-Controller/index.html" class="large large_blocks_BlockController"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Controller</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemMaterialCardSpeed" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Acceleration Card" href="../../../Acceleration-Card/index.html" class="large large_items_ItemMaterial_CardSpeed"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Acceleration Card</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockInscriber" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Inscriber" href="../../../Inscriber/index.html" class="large large_blocks_BlockInscriber"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Inscriber</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockSkyCompass" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Meteorite Compass" href="../../../Meteorite-Compass/index.html" class="large large_blocks_BlockSkyCompass"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Meteorite Compass</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartInterfaceTerminal" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Interface Terminal" href="../../../ME-Interface-Terminal/index.html" class="large large_parts_ItemPart_InterfaceTerminal"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Interface Terminal</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockQuartzPillar" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Certus Quartz Pillar" href="../../../Certus-Quartz-Pillar/index.html" class="large large_blocks_BlockQuartzPillar"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Certus Quartz Pillar</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockQuartzChiseled" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Chiseled Certus Quartz Block" href="../../../Chiseled-Certus-Quartz-Block/index.html" class="large large_blocks_BlockQuartzChiseled"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Chiseled Certus Quartz Block</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockQuartz" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Certus Quartz Block" href="../../../Certus-Quartz-Block/index.html" class="large large_blocks_BlockQuartz"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Certus Quartz Block</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockFluix" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Fluix Block" href="../../../Fluix-Block/index.html" class="large large_blocks_BlockFluix"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Fluix Block</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockSkyStoneSmallBrick" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Sky Stone Small Brick" href="../../../Sky-Stone-Small-Brick/index.html" class="large large_blocks_BlockSkyStone_SmallBrick"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Sky Stone Small Brick</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockSkyStoneBrick" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Sky Stone Brick" href="../../../Sky-Stone-Brick/index.html" class="large large_blocks_BlockSkyStone_Brick"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Sky Stone Brick</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockSkyStoneBlock" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Sky Stone Block" href="../../../Sky-Stone-Block/index.html" class="large large_blocks_BlockSkyStone_Block"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Sky Stone Block</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockSkyStone" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Sky Stone" href="../../../Sky-Stone/index.html" class="large large_blocks_BlockSkyStone"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Sky Stone</div></td></tr></table>
+	</td></tr></table></div><!-- Gen Time 0.18994998931885 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/docs/rv2/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:39:19 GMT -->
+</html>

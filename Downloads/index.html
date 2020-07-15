@@ -1,0 +1,814 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/Downloads/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:36:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>Downloads - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/Downloads/favicon.png" />
+		<meta name="description" content="Applied Energistics is a Minecraft Mod which contains an advanced storage system called ME that lets you store items compactly and in the way you want, as well as do intricate automation."/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/site.css" rel="stylesheet">
+    <link href="../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/Downloads/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <script type="text/javascript">
+
+function apiMsg()
+{
+	return confirm('This is the Application programming interface for mod developers to write integration for AE2, this is not for playing AE2. Are you sure you want to download?');
+}
+
+function devMsg()
+{
+	return confirm('This build is for mod developers to test integration with AE2, this build is not for playing AE2. Are you sure you want to download?');
+}
+
+</script>
+<ul class="downloads navversion nav nav-tabs">
+	<li style="float:right;"><a id="feedsTab" href="#feeds" data-toggle="tab"><b>Feeds</b></a></li>
+			<li><a id="rv6_stableTab" href="#rv6_stable" data-toggle="tab"><b>rv6 - stable</b> <span class="badge stable">7</span></a></li>
+			<li><a id="rv6_betaTab" href="#rv6_beta" data-toggle="tab"><b>rv6 - beta</b> <span class="badge beta">1</span></a></li>
+			<li><a id="rv6_alphaTab" href="#rv6_alpha" data-toggle="tab"><b>rv6 - alpha</b> <span class="badge alpha">4</span></a></li>
+			<li><a id="rv5_stableTab" href="#rv5_stable" data-toggle="tab"><b>rv5 - stable</b> <span class="badge stable">11</span></a></li>
+			<li><a id="rv4_stableTab" href="#rv4_stable" data-toggle="tab"><b>rv4 - stable</b> <span class="badge stable">1</span></a></li>
+			<li><a id="rv2_stableTab" href="#rv2_stable" data-toggle="tab"><b>rv2 - stable</b> <span class="badge stable">10</span></a></li>
+			<li><a id="rv1_stableTab" href="#rv1_stable" data-toggle="tab"><b>rv1 - stable</b> <span class="badge stable">1</span></a></li>
+			<li><a id="rv0_stableTab" href="#rv0_stable" data-toggle="tab"><b>rv0 - stable</b> <span class="badge stable">10</span></a></li>
+	</ul>
+
+<!-- Tab panes -->
+<div style="padding:20px 30px;" class="tab-content">
+  <div class="fade tab-pane" id="feeds">
+		<h2>Live Feeds</h2>
+		<p>You can access various live feeds to keep up to date with the most current releases. These feeds are always current and can be used by software or feed readers to let you know if you need to update, or to do so automatically.</p>
+
+		<h3>MultiMC Quick Mod</h3>
+		<input onClick="this.select();" style="width:350px;" type="url" value="https://feeds.ae-mod.info/quickmod.qm" />
+
+		<h3>RSS Feed</h3>
+		<input onClick="this.select();" style="width:350px;" type="url" value="https://feeds.ae-mod.info/builds.rss" />
+
+		<h3>JSON Feed</h3>
+		<input onClick="this.select();" style="width:350px;" type="url" value="https://feeds.ae-mod.info/builds.json" />
+
+	</div>
+	  <div class="fade tab-pane" id="rv6_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2747063/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-7-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 7</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2019-07-23T19:15:22+00:00">2019-07-23 14:15 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3886/">#3886</a>: Initialise sleeping import bus in pulse mode. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3887/">#3887</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3899/">#3899</a>: Put fluid interface into configured mode when needed. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3903/">#3903</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3901/">#3901</a>: Ensure fluid terminal respects reported stacksizes. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3902/">#3902</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3911/">#3911</a>: Incorrectly used string format. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4007/">#4007</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3925/">#3925</a>: Incorrect API JavaDoc (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4008/">#4008</a>) `IGridBlock#getMachineRepresentation()` must be non null. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4005/">#4005</a>: Persist cell after cleanup. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4009/">#4009</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4062/">#4062</a>: Rounding error due to float precision. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4064/">#4064</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4089/">#4089</a>: Render cable core on straight lines of different types. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4103/">#4103</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4090/">#4090</a> Portable cell incorrect empty itemstack handling (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/4093/">#4093</a>) - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2652453/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-6-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 6</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-12-25T23:37:46+00:00">2018-12-25 17:37 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3880/">#3880</a>: Incorrect compare with empty itemstack. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3881/">#3881</a>: Check for minimum required CTM version when installed. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2651992/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-5-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 5</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-12-24T13:50:11+00:00">2018-12-24 07:50 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3813/">#3813</a>: Implement caching for facade item models. - covers1624</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3832/">#3832</a>: Made ICraftingWatcherHost#onRequestChange() less ambiguous. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3767/">#3767</a>: Fluid Annihilation plane too strict about leftover. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3768/">#3768</a>: Damageable items with nbt and without damage could crash. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3776/">#3776</a>: Fixes dupe bug with cell upgrades. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3810/">#3810</a>: Guard against models providing quads with null orientations. - covers1624</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3821/">#3821</a>: Unconfigured level emitter now report all fluids. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3866/">#3866</a>: Use blockstates to avoid the missing fluid block. - yueh</li>
+								 <li class="list-group-item-text">Update ko_kr.lang (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3674/">#3674</a>) - mindy15963</li>
+								 <li class="list-group-item-text">Update zh_cn.lang (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3570/">#3570</a>) - xsun2001</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2637256/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-4-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 4</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-11-11T17:52:01+00:00">2018-11-11 11:52 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3811/">#3811</a>: Display crafting unit as themself in the network monitor. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3814/">#3814</a>: IO Port no longer put to sleep on load when having work. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3817/">#3817</a>: Missing 1k Crafting Storage and Monitor from Network Status. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2630108/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-3-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 3</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-10-21T09:30:08+00:00">2018-10-21 04:30 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3765/">#3765</a>: Input P2P tunnels can now be assigned a new frequency when the memory card stores the same frequency - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3790/">#3790</a>: Correctly handle fluids with NBT data. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3791/">#3791</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3793/">#3793</a>: Limit filling fluid inventories to their max capacity. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2624747/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-2-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 2</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-10-05T22:10:36+00:00">2018-10-05 17:10 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Now requires Forge RB 14.23.5.2768 (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3760/">#3760</a>) - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3669/">#3669</a>: Switch to new IItemHandler - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3750/">#3750</a>: Allow JEI to differentiate between different cable facades. - mezz</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3146/">#3146</a>: Prevent crash when GlassState is missing. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3746/">#3746</a>: Revert OreDict use for cable anchors. Blame Forge for crashes. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3747/">#3747</a>: Fix issues with facade breaking textures. - covers1624</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2622506/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-09-30T11:55:19+00:00">2018-09-30 06:55 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3744/">#3744</a>: Changed some fluid related recipes to match their item variant. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3688/">#3688</a>: Invalidate Storage Bus cache immediately upon missing TE. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3742/">#3742</a>: Do not use storableInStorageCell() to identify generic cells. - yueh</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv6_beta">
+		
+						
+							<p class="alert alert-warning">
+				Beta builds are relatively stable, most major issues should be already fixed, builds will be pushed as any bugs are fixed.
+			</p>
+				
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2619850/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-beta-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.beta build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-09-22T18:42:38+00:00">2018-09-22 13:42 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3708/">#3708</a>: Move knifes/wrenches to oredict as constants are unreliable - yueh</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv6_alpha">
+		
+						
+					<p class="alert alert-danger">
+				These builds are considered unstable, they may contain item dupes, deletions or other world ending bugs these builds are for TESTING ONLY.<br/>
+				Alpha builds are <b>not</b> compatible with any <b>AE2 addons</b>, <b>do not</b> request add-on authors or other mod developers to support these builds.
+			</p>
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2612061/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-alpha-4-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.alpha build 4</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-09-02T12:22:18+00:00">2018-09-02 07:22 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3702/">#3702</a> Completely new system to render facades. It supports many more models compared to the old system. For example connected textures or multilayer textures. - covers1624</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3706/">#3706</a>: Added a new facade config. Will delete old config file. Refer to config documentation for more details. - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3624/">#3624</a>: Generic ICellInventoryHandler. This breaks API! - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3641/">#3641</a>: Make search box toggle key configurable. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3635/">#3635</a>: Increase Vibration Chamber AE/t. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3636/">#3636</a>: Condensor improvements. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3640/">#3640</a>: Allow ME Chest to work with any cell. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3625/">#3625</a>: Fix buckets in vibration chamber. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3630/">#3630</a>: Formation planes not respecting the entity limit.- yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3632/">#3632</a>: Fix dupe bug with shulker box. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3634/">#3634</a>: Check if part was actually added before spawning. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3644/">#3644</a>: Fix Platform#postChanges to check all registered channels. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3646/">#3646</a>: Render assemblers in the correct layer. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3653/">#3653</a>: Fix ConcurrentModificatonException in NetworkEventBus. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3675/">#3675</a>: Fix tooltip for vibration chamber. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3676/">#3676</a>: Fix fluid parts item models. - fscan</li>
+								 <li class="list-group-item-text">Fxies <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3703/">#3703</a>: Power off a network in case it losses its local buffer. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2582952/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-alpha-3-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.alpha build 3</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-07-14T20:19:19+00:00">2018-07-14 15:19 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1480/">#1480</a>: Change storage/conversion monitor interaction. - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2559/">#2559</a>: Readded InventoryTweak sorting support. - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3553/">#3553</a> Performance improvements for saveChanges() and ICellInventory. Handle with care. API break! - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3609/">#3609</a>: Added a color code to the memory card. Currently used to indicate the P2P frequency. - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3610/">#3610</a>: P2P tunnel frequency color indicators. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3601/">#3601</a>: Restore behaviour of ESCAPE always closing the GUI. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3604/">#3604</a>: Cache current task in Inscriber, reduce amount of GL calls in TESR. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3605/">#3605</a>: Follow forges registration guidelines for entities and oredict. Remove ore camouflage. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3618/">#3618</a>: Move some essential blocks to their own feature category. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3221/">#3221</a>: Fix shift-double click behavior. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3226/">#3226</a>: Cutting knife fixes. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3611/">#3611</a>: Fixed unnecessary cell saving when cell is full. - BrockWS</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2580831/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-alpha-2-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.alpha build 2</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-07-08T22:51:54+00:00">2018-07-08 17:51 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3571/">#3571</a>: Add fluid level emitter - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3572/">#3572</a>: Add Fluid Formation/Annihilation Planes - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3576/">#3576</a>: Search box improvements. Toggle search box focus with TAB. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3555/">#3555</a>: Add fluid GUI to me chest, fixed some warnings while at it. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3560/">#3560</a>: Format fluid tooltip in buckets - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3584/">#3584</a>: Switches from trove to fastutil. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3592/">#3592</a>: Priority GUI improvements - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3598/">#3598</a>: Updated plane textures. New Fluid Annihilation/Formation Plane textures. Updated Annihilation Plane texture for a more noticable animation. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3342/">#3342</a>: Add alternative spelling of aluminium - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3484/">#3484</a>: Fix SpatialIO entity teleport - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3581/">#3581</a>: Fluid cleanup and performance improvements. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3595/">#3595</a>: Fix poweredExtract/Insert and add simulate mode - fscan</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2577127/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv6-alpha-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv6.alpha build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-06-27T22:13:52+00:00">2018-06-27 17:13 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3232/">#3232</a>: Rework custom recipe system - fscan</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3510/">#3510</a>: Initial Fluid Integration. Cells, Import/Export/Storage Bus, Fluid Terminal - BrockWS, DrummerMC</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3543/">#3543</a>: Added fluid models  - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3564/">#3564</a>: Added ME Fluid Interface - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3383/">#3383</a>: Updated Cell Registry safety and docs. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3384/">#3384</a>: IAEStack#fuzzyComparison now compares the same subtypes. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3392/">#3392</a>: Replaced LinkedList with ArrayList or ArrayDeque when applicable. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3399/">#3399</a>: Updated Grid API - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3434/">#3434</a>: Replaces all custom number comparisons with java provided ones. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3539/">#3539</a>: Changed fluid cells to better match the item ones. - yueh</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3567/">#3567</a>: Updated fluid interface GUI and other fluid related textures. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3449/">#3449</a>: Fix CellInventory to not mess with the item definition - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3459/">#3459</a>: Just open the inventory if raytrace misses. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3462/">#3462</a>: Remove call to neighborChanged() - kylev</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3476/">#3476</a>: Correctly handle an empty top namepress. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3478/">#3478</a>: Changes the way xp drops from Certus Ore blocks - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3490/">#3490</a>: Use cached recipe before reaching out to CraftingManager - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3504/">#3504</a>: Fixes issue with Fluid Channel not being sent changes. - BrockWS</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3520/">#3520</a>: Correct order for sort by mod and general code cleanup - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3535/">#3535</a>, Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3486/">#3486</a>: Fixes crash when either quartz types are disabled and prevent cascading worldgen. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3544/">#3544</a>: Fixes interface shift-clicking to generate correct onChangeInventory events - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3545/">#3545</a>: Fixes DriveBakedModel to not crash when SLOT_STATE is null  - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3548/">#3548</a>: Fix AEBaseTile to respect overridden markDirty implementations. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3556/">#3556</a>: Only extract insertable fluid amount. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3560/">#3560</a>: Render the fluid stacksize for ME fluid slots. - yueh</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv5_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2543840/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-11-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 11</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-03-22T13:05:29+00:00">2018-03-22 08:05 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3428/">#3428</a>: Invalidate container once the corresponding TE no longer exists. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2538800/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-10-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 10</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-03-08T15:55:24+00:00">2018-03-08 09:55 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3412/">#3412</a>: Added a simple warning to patterns when using CraftingManager fallback. - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3415/">#3415</a>: Added a config option to disable the CraftingManager fallback. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3411/">#3411</a>: Limit patterns without substitute to precise operations. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3417/">#3417</a>: Avoid creating ItemStacks when injecting them into a cell. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2537419/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-9-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 9</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-03-04T13:42:25+00:00">2018-03-04 07:42 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3389/">#3389</a>: Prevent inventory cache from deviating from the actual inventory. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3394/">#3394</a>: Use cache to avoid using a no longer existing IItemHandler - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3405/">#3405</a>: Use cached tooltip for search, only copy a matching result for the view afterwards. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2528331/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-8-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 8</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-02-05T14:55:00+00:00">2018-02-05 08:55 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3367/">#3367</a>: Rework fuzzy comparison for 99 percent threshold to be identical in all cases. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3370/">#3370</a>: Avoid caching the model for facades locally and keep a ModelLoader reference around. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2525654/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-7-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 7</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-01-29T14:41:01+00:00">2018-01-29 08:41 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3363/">#3363</a>: Energy providers/requesters incorrectly removed on simulate. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2525252/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-6-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 6</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-01-28T13:15:08+00:00">2018-01-28 07:15 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3239/">#3239</a>: Torches should not be placeable on cranks. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3338/">#3338</a>: Upgrade inventory dupe bug due to ignoring player hand. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3345/">#3345</a>: Added missing sky stone brick recipes. - yueh</li>
+								 <li class="list-group-item-text">Update ru_RU.lang - Foxgreat</li>
+								 <li class="list-group-item-text">Update zh_TW.lang - sfs131010</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2520222/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-5-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 5</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2018-01-14T13:48:31+00:00">2018-01-14 07:48 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3288/">#3288</a>: Fixes various item rotations when held in 3rd person. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3304/">#3304</a>: Fixes some light level sync issues. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3315/">#3315</a>: Slightly more permissive checks for autocrafting for items with empty NBT tags. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2515354/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-4-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 4</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2017-12-31T12:33:02+00:00">2017-12-31 06:33 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3259/">#3259</a>: Added a debug generator for ForgeEnergy. - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3284/">#3284</a>: Reworked IO Port to handle StorageChannels better. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3217/">#3217</a>: Allow caps to be used as P2P attunements. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3255/">#3255</a>: Cache invalid patterns instead computing them every frame. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3260/">#3260</a>: Only match damaged items when selected and set to 99%. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3265/">#3265</a>: Do not strip special chars when extracting recipes. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3282/">#3282</a>: Stacksizes &gt; 64 prevent applicator from cycling. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3286/">#3286</a>: Incorrectly inverted hasSkyLight causes crashes on spatial transfer. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3293/">#3293</a>: Only update light level if the panel-facing block changes. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3296/">#3296</a>: Prevent invalid TileEntites from updating their block. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2503759/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-3-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 3</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2017-11-26T15:02:32+00:00">2017-11-26 09:02 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Updated to latest Forge RB (14.23.1.2554). Necessary to avoid broken recipes in earlier versions. - yueh</li>
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3231/">#3231</a>: Add CraftTweaker support - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3246/">#3246</a>: Revert DamageableRecipe changes. Now fixed by Forge. - fscan</li>
+								 <li class="list-group-item-text">Changes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3247/">#3247</a>: Deprecate AE2 recipe system to indicate that they are going away soon. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/932/">#932</a>: Fire ExplosionEvent.Detonate when tiny TNT explodes. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3238/">#3238</a>: Rework ContainerInscriber validation to Correctly handle metadata wildcard for inscriber inputs - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3248/">#3248</a>: Remove swingArm in IToolHammer implementation. - fscan</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2499496/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-2-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 2</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2017-11-12T17:25:37+00:00">2017-11-12 11:25 CST</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Feature <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3202/">#3202</a>: Use craftinggrid to check existing patterns for JEI recipe transfer. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3118/">#3118</a>: Set base biome to &quot;void&quot; to shut up warning. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3195/">#3195</a>: Spatial IO fixes. Removes warning when transfering entities. Removes old tickables. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3199/">#3199</a>: Fix NetworkToolViewer stack overflow, saveguard against markDirty recursion. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3200/">#3200</a>: Cleanup recipe factories to prevent recipes from not working on servers with forge version 2532 or later. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3201/">#3201</a>: Rework ImportBus to avoid crashes in very rare edge cases. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3205/">#3205</a>: Tooltips for ME Slots missing colors. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3209/">#3209</a>: Reset stack to prevent leaking meaningful ones to the crafting task. - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3215/">#3215</a>: Fix StorageBus not updating item count correctly when multiple stacks changes. - fscan</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3219/">#3219</a>: Refactors grid connections to prevent incorrect security breaks. - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2497056/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.12.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv5-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv5.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2017-11-04T12:45:37+00:00">2017-11-04 07:45 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/3192/">#3192</a>: Removes channels from the render state for non smart cables to avoid caching duplicate models. - yueh</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv4_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2454983/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.10.2</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv4-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv4.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2017-07-23T13:57:51+00:00">2017-07-23 08:57 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">This should be the final release for 1.10.</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2750/">#2750</a>: Added missing RF Integration Modules. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2770/">#2770</a>) - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2768/">#2768</a>: Incorrect return value when charging items via Tesla. (<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2771/">#2771</a>) - yueh</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv2_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2245762/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-10.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-10-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-10-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 10</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-07-06T08:18:07+00:00">2015-07-06 03:18 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1611/">#1611</a>: Resolves some chunkloading behaviours not correctly updating the network - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2243087/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-9.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-9-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-9-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 9</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-16T17:48:40+00:00">2015-06-16 12:48 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1510/">#1510</a>: No longer deactivates a network with a multiple of 256 used channels - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2242849/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-8.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-8-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-8-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 8</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-14T16:24:24+00:00">2015-06-14 11:24 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Updates BC to 7.0.9 Fixes disabling of BC integration - thatsIch</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2242806/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-7.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-7-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-7-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 7</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-14T08:16:51+00:00">2015-06-14 03:16 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1559/">#1559</a>: Level Emitter with P:R alloy wire does not crash anymore - thatsIch</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1588/">#1588</a>: Charged Certus Quartz Ore has its own oredictionary entry - thatsIch</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2242134/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-6.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-6-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-6-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 6</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-09T21:48:03+00:00">2015-06-09 16:48 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes CraftGuide Integration lag - Uristqwerty</li>
+								 <li class="list-group-item-text">Added Grinder recipes to CraftGuide - Uristqwerty</li>
+								 <li class="list-group-item-text">Added Inscriber recipes to CraftGuide - Uristqwerty</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2241481/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-5-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 5</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-05T21:16:02+00:00">2015-06-05 16:16 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Should fix <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1036/">#1036</a>: No longer invalidate the cache of inventories, when not required - yueh</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2240972/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+									 				 				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-4-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 4</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-06-01T18:52:14+00:00">2015-06-01 13:52 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1536/">#1536</a>: Checking for all required BC classes - thatsIch</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2238960/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-3.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-3-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-3-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 3</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-05-19T19:26:43+00:00">2015-05-19 14:26 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1465/">#1465</a>: Disassembling a Crafting Storage will yield the correct material - yueh</li>
+								 <li class="list-group-item-text">Removes default RF tooltip on AE blocks - TheJulianJES</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1442/">#1442</a>: Parts display their name in WAILA - TheJulianJES</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1389/">#1389</a>: Hold backspace to clear search in terminals - yueh</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1384/">#1384</a>: No infinite power with RotarCraft v6 anymore - jeremiahwinsley</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2238883/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-2.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-2-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-2-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 2</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-05-19T05:37:33+00:00">2015-05-19 00:37 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1442/">#1442</a>: Don't add the player inventory twice - TheJulianJES</li>
+								 <li class="list-group-item-text">Fixes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1411/">#1411</a>: Adds recipes for stairs - thatsIch</li>
+								 <li class="list-group-item-text">Fixes #XXXX: Plumb potential memory leak - TheJulianJES</li>
+								 <li class="list-group-item-text">Update pt_BR.lang - LorenzoDCC</li>
+								 <li class="list-group-item-text">Update de_DE.lang - TheJulianJES</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2236702/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv2-stable-1.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv2-stable-1-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv2-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv2.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2015-05-03T20:16:55+00:00">2015-05-03 15:16 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Closes <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1287/">#1287</a>: Set release channel to stable - thatsIch</li>
+								 <li class="list-group-item-text">Link to release notes <a target="_blank" href="../docs/rv2/release-notes/index.html">http://ae-mod.info/docs/rv2/release-notes/</a></li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv1_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2214847/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv1-stable-1.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv1-stable-1-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv1-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv1.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-09-21T04:54:47+00:00">2014-09-20 23:54 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Nothing</li>
+							  </ol>
+			</div>
+				
+		</div>
+	  <div class="fade tab-pane" id="rv0_stable">
+		
+						
+						
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2212867/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.10</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv0-stable-10.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-10-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-10-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 10</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-07-10T01:25:04+00:00">2014-07-09 20:25 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixed an issue here block updates would cause CME's and other crashes.</li>
+								 <li class="list-group-item-text">Changed order of initialization for Grid Cache Post Construction Event.</li>
+								 <li class="list-group-item-text">Added Illuminated Panels to the ore dictionary and converted the recipe.</li>
+								 <li class="list-group-item-text">Compatability fix: Removed Wheat -&gt; Flour Recipe from macerator and fz Lacerator</li>
+								 <li class="list-group-item-text">Compatability fix: Removed Nether Quartz Grinding Recipe from fz Lacerator</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													<h1 class="downloadLink"><a title="Standard Build" href="https://minecraft.curseforge.com/projects/applied-energistics-2/files/2212866/download"><span class="glyphicon glyphicon-cloud-download"></span> Download for 1.7.2</a>
+					<h1 class="downloadLink"><a title="Standard Build Mirror" href="../builds/appliedenergistics2-rv0-stable-9.jar"><span class="glyphicon glyphicon-save"></span> Mirror</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-9-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-9-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 9</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-07-10T01:24:52+00:00">2014-07-09 20:24 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Includes all the fixes in build 10 for 1.7.2</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-8.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.10</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-8-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-8-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 8</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-30T02:59:19+00:00">2014-06-29 21:59 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fix an issue where formation planes would eat items if there where too many entities in the chunk.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-7.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.2</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-7-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-7-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 7</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-30T02:59:11+00:00">2014-06-29 21:59 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Includes all patches from build 8, 6, and 5 for 1.7.2</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-6.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.10</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-6-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-6-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 6</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-29T17:49:05+00:00">2014-06-29 12:49 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixed Bug: <a href="../Tracker/0571/index.html">#0571</a> - Storage Cell dismantling not working.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-5.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.10</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-5-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-5-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 5</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-29T01:57:38+00:00">2014-06-28 20:57 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Dropped Support for MC 1.7.2  ( Sorry APIs are making breaking changs from .2 Versions )</li>
+								 <li class="list-group-item-text">Upgraded IC2 API to Match IC2 Experimental Build <a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/489/">#489</a> ( minimum requirement if installed )</li>
+								 <li class="list-group-item-text">Removed a deprecated method call for 1.7.10.</li>
+								 <li class="list-group-item-text">Fixed an issue where Fuzzy Import buses were ignoring damage differences.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-4.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.x</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-4-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-4-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 4</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-28T05:41:55+00:00">2014-06-28 00:41 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixed Minor Texture Rotation issue on 1.7.10 for ME Chest. ( 1.7.2 will get worse, sorry )</li>
+								 <li class="list-group-item-text">Flipped Charged Staff, and Entropy Manipulator Texture so they are held correctly.</li>
+								 <li class="list-group-item-text">Split handling of RF API into an item and block segment to fix a crash when the block API is available, but the item one is not.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-3.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.x</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-3-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-3-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 3</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-27T03:12:18+00:00">2014-06-26 22:12 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fix an issue where interfaces would not cause storage buses to re-check their status.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-2.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.x</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-2-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-2-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 2</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-26T04:04:59+00:00">2014-06-25 23:04 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Fixed Bug: <a href="../Tracker/0562/index.html">#0562</a> - Inventory desync while dismantle storage cells</li>
+								 <li class="list-group-item-text">Fixed a bug where disassembling storage cells might put items in the players armor slots.</li>
+								 <li class="list-group-item-text">Update MFR Rednet API For Later.</li>
+								 <li class="list-group-item-text">Enabled Minecraft 1.7.10 Support.</li>
+							  </ol>
+			</div>
+				  <div class="list-group downloadBox">
+			  <div class="list-group-item active">
+													 <h1 class="downloadLink"><a title="Standard Build" href="../builds/appliedenergistics2-rv0-stable-1.jar"><span class="glyphicon glyphicon-save"></span> Download for 1.7.2</a></h1>				 				 <h1 class="downloadLink"><a title="Developer Build" onclick="return devMsg();" href="../builds/appliedenergistics2-rv0-stable-1-dev.jar"><span class="glyphicon glyphicon-wrench"></span> Developer Build</a></h1>				 <h1 class="downloadLink"><a title="API Source" onclick="return apiMsg();"  href="../builds/appliedenergistics2-rv0-stable-1-api.jar"><span class="glyphicon glyphicon-link"></span> API</a></h1>								 <h4 class="list-group-item-heading">rv0.stable build 1</h4>
+				 <p class="list-group-item-text">Built at <time datetime="2014-06-24T17:44:34+00:00">2014-06-24 12:44 CDT</time></p>
+			  </div>
+			  <ol class="list-group-item highlight">
+								 <li class="list-group-item-text">Marked as Stable.</li>
+								 <li class="list-group-item-text">Disabled Inventory Tweaks on ME Gui.</li>
+							  </ol>
+			</div>
+				
+		</div>
+	</div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#rv6_stableTab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<!-- Gen Time 0.083225011825562 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/Downloads/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:38:02 GMT -->
+</html>

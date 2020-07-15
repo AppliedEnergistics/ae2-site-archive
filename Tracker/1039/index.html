@@ -1,0 +1,1040 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/Tracker/1039/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>Tracker - Item #1039 - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/favicon.png" />
+		<meta name="description" content="Closed Bug #1039 - Client time-out, server lag"/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/site.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/site.css" rel="stylesheet">
+    <link href="../../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/Tracker/1039/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <ul class="Tracker navversion nav nav-tabs"></ul><div style="margin-top:20px;" class="container trackerTracker"><div class="Window WindowPane" style="margin-top:5px;">
+		<div class="WindowPaneInternal">
+			<form action="http://ae-mod.info/Tracker/1039/" method="post">
+				<input type="hidden" name="ReqNum" value="118" / > 
+				<input type="hidden" name="Offset" value=""/>
+				<h3 class="bugLine">Bug: #1039 - Client time-out, server lag</h3>
+				<table cellspacing="1" width="100%">
+					<tr>
+						<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+						<td class="trackTD" style="padding:0px;">
+														<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr><td class="bugHeader" width="90">Tracker ID:</td><td class="bugData" align="left">#1039</td></tr>
+							</table>
+							<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr>
+									<td class="bugHeader" width="90">Type:</td><td class="bugData" align="left">Bug</td>
+								</tr>
+							</table>
+															<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">MC Version:</td><td class="bugData" align="left">1.7.10</td>
+									</tr>
+								</table>
+																						<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">AE Version:</td><td class="bugData" align="left">rv1-beta-24</td>
+									</tr>
+								</table>
+														<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr>
+									<td class="bugHeader" width="90">Created:</td><td class="bugData" align="left"><time datetime="2014-09-08T23:04:18+00:00">2014-09-08 18:04 CDT</time></td>
+								</tr>
+							</table>
+																						<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Message:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">First of all, I'm not sure this is an applied energistics problem, if it's not. Please forgive me, I'm working hard to locate the issue, and trying all options. I saw some weird things going on in the ME-network, and figured that could be it. If you could point me to another mod, I'll gladly go there. 
+
+**What is happening?**
+Well, the clients time out. I've noticed that when this happens several things seem to happen:
+* The server &quot;avg-tick&quot; freezes, so here is a HUGE lag-spike.
+* After the freeze is gone, a message of &quot;can't keep up&quot; is delivered. (with hundreds of lost ticks)
+* All players time out (usually only one or two players use the server)
+* If I'm in game when this happens, I noticed that it happens just when the ME-systems tries to apply all the channel (when the cables are lit up, I'm guessing that they are trying to find the shortest route.
+* Sometimes I get a &quot;skipping BlockEntity with id&quot; when the lag-spikes occur. (I fiddled around a lot with mods. It could be anything. Could it be I'm storing something that was deleted?
+
+Sometimes (I have not been able to tell when), the server just &quot;get's it&quot; and stops lagging, and we can play normally for a while.
+
+**Other interesting notes:**
+* I am not sure, but I think the problem gets worse when I am not around the base. (when the chunks aren't loaded?
+* The problem seem to come and go, it's really hard to pinpoint. Sometimes it just works.
+* The problem disappears when I turn of power. 
+* The problem get worse if the me-system is LOW on power (turning on and off, and I'm guessing doing the &quot;shortest&quot; route calculation all the time)
+* The problem is not computer related as far as I can tell, I tried starting the server on two differant computers, and the server runs decently most of the time it's not lagging. 
+* When the server get's in it's worst &quot;loops&quot;, it freezes almost 1-3 times per minute, and the lag seems to get progressively worse (as if stuck in a loop).
+* Sometimes, the server freezes for several minutes at a time, and to quit it you have to force-shut the server or wait minutes.
+
+**What is expected?**
+Server not freezing. Client's not timing out.
+
+**How to reproduce?**
+I'll upload the world-save if you want to try it, but there are a lot of mods, so I'm not sure you want to take the time to look at it. (I'm using it privately, so I haven't gotten permission to post it publicly). Unfortunately, I'm not getting any relevant errors as far as I can tell, I got a ui error that caused a client-crash this very last time, but I have not gotten that error before, so I expect it's unrelated to the problems above. 
+
+It's important to notice, that the problem seems to occur when the chunks in the main base are loaded by chunkloaders. But no player is there, so 
+
+Latest client UI crash: 
+<a target="_blank" href="http://pastebin.com/g6BdUs1R">http://pastebin.com/g6BdUs1R</a>
+
+Server log when it is happening:
+<a target="_blank" href="http://pastebin.com/k0E8YCbP">http://pastebin.com/k0E8YCbP</a>
+
+Server or Single Player?: Server (2-3 players, private)
+
+Screenshot?: Not needed, simply</div></td>
+									</tr>
+								</table>
+													</td>
+					</tr>
+				</table>
+				
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-08T23:27:11+00:00">2014-09-08 18:27 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Small update:
+I managed to &quot;get in&quot; the server for a while no. It all worked nice when the ME-system was up and running.
+
+When I logged out (no player online anymore), the server spiked again. Wierd.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T00:09:34+00:00">2014-09-08 19:09 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">The crash in your report was already fixed, you didn't pick the correct version on your report.
+
+I'm not sure what else to do about this, you can try profiling the server, but timeouts are not easily to diagnose they are most commonly caused by things sending packets that shouldn't be sending packets.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T07:12:41+00:00">2014-09-09 02:12 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Thanks for taking the time! I understand these sort of &quot;bug report&quot; are probably hard to track down.
+
+Just double-checked the versions to be 24 (the world was created in an earlier version) in both client and server, they were correct. But perhaps that error-log was from before, I changed that very night. I will triple check later tonight, but I'm pretty sure it's unrelated. I got that error when I shift clicked a silicon circuit in the machine before it was complete. It caused a crash, and then I was unable to log in again without time outs, it was the first time I got this error.
+
+Could this sort of issue be caused by building a bad network like loops or nested p2p-tunnels? I get the FEELING the server gets frozen when it tries to build the channels in the network. I might be coincidental, and the error might be from any other mod, or perhaps a conflict I can't find.
+
+Are there any logs more than the regular server log that can be enabled to see what the ME-network does?
+
+More info: I noticed the lag disappears if I disconnect the power from the ME-network, but leave the rest of the power on.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T07:20:33+00:00">2014-09-09 02:20 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I'll probably have to write something to print out packets or something to diagnose the issue, just by turning off the power we can't really confirm what is sending packets, or what is causing the issue. I had numerous issues reported for AE1 like this, and they all ended up to be a mod with barrels sending packets when they were connected to a storage bus..
+
+So it could be something like that, or maybe a unknown bug in AE2 thats causing lots of packets to be sent. I'll have to look into making some kinda of packet logging or something that we can use to try and track it down.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T07:50:34+00:00">2014-09-09 02:50 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">That's great! You are a fantastic mod-author, things such as this is well beyond what can be expected from anyone's free time. (Sidenote: do you have Patreon?)
+
+I'll be willing to put time into logging and testing this if you need it, or just tell me if you want to have the world to fiddle around with.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.thatsich.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/thatsIch/index.html">thatsIch</a><div class="SmallUser">Type: Moderator</div><div class="SmallUser">Joined: 02/05/2013</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T08:29:05+00:00">2014-09-09 03:29 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">His patreon <a target="_blank" href="http://www.patreon.com/algorithmx2">http://www.patreon.com/algorithmx2</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T20:19:51+00:00">2014-09-09 15:19 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Ok, I wrote <a target="_blank" href="https://drone.io/github.com/AlgorithmX2/PacketLogger/files">https://drone.io/github.com/AlgorithmX2/PacketLogger/files</a> snag the non dev version and throw it on your client it will pretty much all the network traffic then reproduce the issue. once your have that, dropbox/pastebin it and we can see what it says, hopefully it will get us something useful.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T20:38:20+00:00">2014-09-09 15:38 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Got it! I'll get back when I have some data!
+
+Also, I'm 95% certain now, that the issue starts when the network runs when I'm not near the base.
+
+I just left for the nether, and the issue came back within 1 min. So I think I can reproduce the issue.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T21:43:43+00:00">2014-09-09 16:43 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Here is the client log:
+<a target="_blank" href="https://gist.github.com/Ikabodo/85372935b365bb6844dd">https://gist.github.com/Ikabodo/85372935b365bb6844dd</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-09T22:00:46+00:00">2014-09-09 17:00 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Ok looks like some kind of S3FPacketCustomPayload, my logger didn't do a good job, i'll try to improve it.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T02:14:27+00:00">2014-09-09 21:14 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Ok so fixed that, also I may have found the issue if it was indeed AE2, so go ahead and update AE2.
+
+if it persists try the new version of the logger and we will continue the search.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T07:25:11+00:00">2014-09-10 02:25 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Great!
+
+I'll try it out as soon as I get home to the server tonight!
+
+Out of curiousity:
+Did it seem like a compability issue? You mentioned earlier that another mod could be sending packet where it shouldn't? If you figure out what mod it is, could you tell me? I figured I should mention it to that author so they can work on it.
+
+Also, I got a packet can only be 32bit in size error just after I posted the log. Not sure if it's related. 
+
+Thanks again for taking the time to look into this issue.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T13:59:30+00:00">2014-09-10 08:59 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Unfortunately, the new version didn't seem to remove the issue. I disconnected within one minute of logging in.
+
+Here is the new log:
+<a target="_blank" href="https://gist.github.com/Ikabodo/eff44f1a98341ff21ca2">https://gist.github.com/Ikabodo/eff44f1a98341ff21ca2</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T14:05:26+00:00">2014-09-10 09:05 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Oh, I think the text cut of.
+
+Here is the complete file:
+<a target="_blank" href="http://filer.ikabodo.se/latest.log">http://filer.ikabodo.se/latest.log</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T14:06:32+00:00">2014-09-10 09:06 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">This is with rv1.beta build 25 ofcourse.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T15:35:21+00:00">2014-09-10 10:35 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">AE2 sent 1702 tile entities
+Carpenters Blocks sent 595 beds ( tileentities )
+
+Something sent 886 empty tile entities ( 208,84,48 or 226,80,45 ) are the location of two such tile entities.
+
+ProjRed Sent 27 packets
+Open Mods sent 64 packets
+CoFH sent 84 packets
+FMP Sent 183 packets
+Mek sent 2096 custom packets.
+
+I don't know what the contents of the Mek data is, it might be tile entity data, or it might be something else, they appear to be 34 bytes a-peace on average
+
+FMP Packets tend to be 60-1200 bytes pretty big range here
+
+AE2's packets tend to be 18-20 bytes, 
+
+the unknown packets around a few bytes 4-5 ish.
+
+the beds are pretty size-able, I don't have a solid number on them however.
+
+This probably gives you a size-able world load of about 0.5 - 1.0mb of data if you combine it with other chunk data
+
+What is your internet connection?
+
+Maybe we should do one without the AE2 network online to see what the difference is?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T16:34:09+00:00">2014-09-10 11:34 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I'm on a 60 mbit/s cable service, but I doubt that is the issue, since all experiments are done on the local network. Also, I can actually SEE the server freezing the avg tick on the server screen (memory is 91% free, the avg tick is frozen), so something that should not be happening, is happening.
+
+* I'll try removing carpenters. (I ruled it out before, since it uses no power, and turning off power removed the issue earlier)
+* The unknown packages seem to be coming from big reactors, at least that is what is on the coordinates. Turning them off has made no difference so far, and they are not connected to the ME-network (bedsides from providing power via mekanism cables to the energy acceptor)
+
+I'll try to log in and disable to ME-network. If I'm able to turn it off in the few seconds I'm in game. I'll get back to you as soon as I'm able to. I'm getting timeout so often now I can barely walk 2 feet.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T16:36:15+00:00">2014-09-10 11:36 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">The tick rate on the server is freezing? I must have missed that i thought we were talking about a packet overload issue this whole time...
+
+If thats the case you will want o profile the server instead. <a target="_blank" href="http://ae1.ae-mod.info/Profiling/">http://ae1.ae-mod.info/Profiling/</a> provides details on how to do that.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T16:40:01+00:00">2014-09-10 11:40 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I managed to remove the power from the me-network. And the time-outs are gone.
+
+I can't get a log from a crash now though. Do you want me to send just a packetlog from regular play?
+
+Or do you want me to log and then put the power back on?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T16:41:53+00:00">2014-09-10 11:41 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Lets switch gears and profile the server as you login when it freezes, I've been approaching the issue wrong, I completely missed the &quot;server is locking up&quot; part of your initial report and thought we are talking about you getting &quot;lagged out&quot; because of too many packets.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T17:47:00+00:00">2014-09-10 12:47 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I'm sorry if this is a stupid question, but should I run the profiler on the client computer, the server computer or both?
+
+Considering the client times out and the server freezes.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T17:47:43+00:00">2014-09-10 12:47 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Server, since the server is the the thing freezing. the client just can't talk to it while that happens.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T17:54:32+00:00">2014-09-10 12:54 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I'm on it. 
+
+I'll get back to you in a few minutes. I can reproduce it now, when giving direct power to the AE2 network with a creative energy cell.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T18:12:49+00:00">2014-09-10 13:12 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I think I managed to do it. Although it looked like the profiler almost froze itself.
+
+<a target="_blank" href="http://filer.ikabodo.se/profiling_1.nps">http://filer.ikabodo.se/profiling_1.nps</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T18:16:42+00:00">2014-09-10 13:16 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Oups, posted the wrong file. Give me a moment.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T18:20:46+00:00">2014-09-10 13:20 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent"><a target="_blank" href="http://filer.ikabodo.se/sampler_1.nps">http://filer.ikabodo.se/sampler_1.nps</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T18:22:53+00:00">2014-09-10 13:22 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I also got an error in the log when running the profiler the first time (I started the cpu-log from the profile-tab first. Not sure it makes any differance)
+
+<a target="_blank" href="http://filer.ikabodo.se/oj.txt">http://filer.ikabodo.se/oj.txt</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T20:02:17+00:00">2014-09-10 15:02 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Seems related to a number of AE2's internals interacting in a strange way, mostly it seems to be rebuilding the the storage array a number of times because a chunk keeps unloading.
+
+I'm pushing a new build with some of the code in question re-worked, so we'll see if that improves it, or not. If it doesn't I might need you to send me your world so I can inspect things closer.
+
+For now please test with the new build, if the issue persists repeat the profile; the sampler ( second one ) is the one I needed.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T21:22:45+00:00">2014-09-10 16:22 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I didn't get the time to fully test it. I didn't time out when I switched to the nether this time. But I DID get a few big lagspikes. I'll get some serious testing tomorrow. 
+
+But first impression is that you at the very least minimized the problem.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-10T22:53:10+00:00">2014-09-10 17:53 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Turns out that stuff I changed caused way more issues then it helped so I had to roll it back, I think you should send me your server so I can do more in depth testing and work on resolving the issue.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T04:37:39+00:00">2014-09-10 23:37 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">In the mean time I tried a diffrent route of attacking the issue I saw in the profile, <a target="_blank" href="https://dl.dropboxusercontent.com/u/9117298/appliedenergistics2-rv1-beta-27b.jar">https://dl.dropboxusercontent.com/u/9117298/appliedenergistics2-rv1-beta-27b.jar</a>
+
+I tested this with a setup I build specifically designed to try and reproduce the issue your seeing, it seemed to work well for my setup, so heres hoping it works for yours.
+
+As a side note, I'm not sure if its compatible with ExtraCells.. I'm not sure if you had that installed or not.. so just a heads up if you crash it might be cause of that.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T07:23:59+00:00">2014-09-11 02:23 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I'll try the new version tonight. If i does not work, I'll upload the world for you.
+
+By the way, I'm not sure if this is related, probably a long shot.
+
+<a target="_blank" href="https://github.com/aidancbrady/Mekanism/issues/1762">https://github.com/aidancbrady/Mekanism/issues/1762</a>
+But I've been having a separate issue with FPS drops from mekanism-machine, and I've interpreted it as unrelated. But in the last thread they mentioned they might be causing to many chunk-renderings. I've been using your storage monitors, could it be something with them? I've noticed that during lag they don't seem to update the correct amount of the item in the network. 
+
+P.S.: I sent them the profiling from the client that you showed me how to do. I think I learned something usefull. :)</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T21:43:02+00:00">2014-09-11 16:43 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Well, I've tried it out for a while now. It's definately getting better, only a few time-outs not, not at all like before. I'll do some more testing, to see if I get some more info. 
+
+Right now I'm focusing on the stutter (from mekanism), I got an indication that something called sack overflow could be causing the lag.
+
+Another long-shot.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T22:05:09+00:00">2014-09-11 17:05 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I got some more time outs on the the moon. (there is a quantum link there, and a small ME-network)
+
+Using 27b
+
+<a target="_blank" href="http://filer.ikabodo.se/sampler_2.nps">http://filer.ikabodo.se/sampler_2.nps</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T22:14:09+00:00">2014-09-11 17:14 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Also, it looks like the CPU is spiking strangely.
+<a target="_blank" href="http://filer.ikabodo.se/capture.jpg">http://filer.ikabodo.se/capture.jpg</a>
+
+Or am I reading it wrong?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-11T23:09:29+00:00">2014-09-11 18:09 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">It looks like the issue is a huge chain of chunk loading, AE2 is basically gone now; better then I was hoping for honestly.
+
+So essentially whats happening, is the controller is changing its power state, this causes a neighbor update, this causes a mekanism cable to load and from the looks of of it; it then spirals outward loading your entire base or a least a pretty huge chunk of it; more then likely this then probably causes AE2 to get powered, then the chunks unload; then it loses power... then the cycle restarts.
+
+Thats at least what i'm kinda guessing is happening, why the controller is staying loaded, is uncertain.
+
+Two things could probably help;
+1. Mekanism should probably not load chunks as it builds its network; this will cut it off before it spirals out of control.
+2. You could chunkload your base so it stops unloading constantly.
+
+You're correct that your CPU is spiking, More than likely the CPU spikes you're seeing are related to the loading/unloading going on.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-12T07:25:41+00:00">2014-09-12 02:25 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Woa, that's really specific. I'll go talk to the mekanism guys about this. Thanks for going above and beyond. You are my first Patreon. :)
+
+I do have a chunkloaded in the base during testing (didn't before) but apparently its not covering a big enough area. The base is pretty spread out, I'll a few small chunkloaders that covers the smaler parts of the base to see if that helps temporarily.
+
+Just to be clear, you mean the ME Controller is changing power-state right? Should it be doing this? Could a powerfluctiation from the powermod (big reactors/mekanism) cause the ME Controller to switch on an off, and in the end causing mekanism to spiral out? In that case, I could try a creative powercell near the ME-controller temporarily.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-12T15:19:29+00:00">2014-09-12 10:19 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">it should if it runs out of power, as long as its getting power steadily it shouldn't' happen, perhaps the power infrastructure is unloading?
+
+Keep in mind that most of my /theory/ is based on just the stack trace, I really have no idea how your base is setup, or what is chunk loaded or not.
+
+With that said I think I'm ready to close this issue since the existing issue with AE2 appears to be resolved.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.ikabodo.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/ikabodo/index.html">ikabodo</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/27/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-09-13T18:54:28+00:00">2014-09-13 13:54 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Thanks again for all the help, chunkloading has worked so far, although I'm still going to look into the issues causing it to begin with. 
+
+I chunkloaded before, but I'm thinking the issue was either a MFR-farm or a Mekanism Brine-farm that was a bit off from the main base. I'll look into it.
+
+Yeah, closing this was the right the decision. :D</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+											</form>
+		</div>
+		<a style="float:right;margin:5px;" href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues" class="btn btn-default">Back to List</a>
+		<div style="clear:both;"></div>
+	</div></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<!-- Gen Time 0.021927118301392 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/Tracker/1039/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:36 GMT -->
+</html>

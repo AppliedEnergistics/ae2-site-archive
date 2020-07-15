@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/Tracker/?viewLog=1959 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>Tracker - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/favicon.png" />
+		<meta name="description" content="Applied Energistics is a Minecraft Mod which contains an advanced storage system called ME that lets you store items compactly and in the way you want, as well as do intricate automation."/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/site.css" rel="stylesheet">
+    <link href="../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/Tracker/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <div style="margin:10px;"><h3>Viewing Log:</h3><pre>---- Minecraft Crash Report ----
+// Oops.
+
+Time: 6/14/14 9:20 PM
+Description: Unexpected error
+
+java.lang.IllegalArgumentException
+	at java.util.PriorityQueue.<init>(Unknown Source)
+	at net.minecraft.client.renderer.Tessellator.func_147564_a(Tessellator.java:160)
+	at net.minecraft.client.renderer.WorldRenderer.func_147891_a(WorldRenderer.java:248)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:204)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:1522)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1178)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1015)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:944)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:835)
+	at net.minecraft.client.main.Main.main(SourceFile:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.PriorityQueue.<init>(Unknown Source)
+	at net.minecraft.client.renderer.Tessellator.func_147564_a(Tessellator.java:160)
+	at net.minecraft.client.renderer.WorldRenderer.func_147891_a(WorldRenderer.java:248)
+	at net.minecraft.client.renderer.WorldRenderer.func_147892_a(WorldRenderer.java:204)
+	at net.minecraft.client.renderer.RenderGlobal.func_72716_a(RenderGlobal.java:1522)
+	at net.minecraft.client.renderer.EntityRenderer.func_78471_a(EntityRenderer.java:1178)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Loothor'/48311, l='MpServer', x=905.59, y=5.62, z=110.08]]
+	Chunk stats: MultiplayerChunkCache: 225, 225
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (917,4,113), Chunk: (at 5,0,1 in 57,7; contains blocks 912,0,112 to 927,255,127), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 3745 game time, 45267 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 123 total; [EntityZombie['Zombie'/48064, l='MpServer', x=830.50, y=4.00, z=70.50], EntityPig['Pig'/48066, l='MpServer', x=829.78, y=4.00, z=111.66], EntityPig['Pig'/48068, l='MpServer', x=827.75, y=4.00, z=120.72], EntitySkeleton['Skeleton'/48075, l='MpServer', x=828.66, y=4.00, z=131.84], EntitySkeleton['Skeleton'/48077, l='MpServer', x=827.88, y=4.00, z=172.47], EntityCreeper['Creeper'/48078, l='MpServer', x=828.38, y=4.00, z=171.06], EntityCreeper['Creeper'/48079, l='MpServer', x=830.22, y=4.00, z=178.09], EntitySpider['Spider'/48085, l='MpServer', x=826.81, y=4.00, z=180.00], EntitySpider['Spider'/48087, l='MpServer', x=841.56, y=4.00, z=37.84], EntitySpider['Spider'/48086, l='MpServer', x=835.50, y=4.00, z=34.50], EntitySkeleton['Skeleton'/48089, l='MpServer', x=835.50, y=4.00, z=121.50], EntityPig['Pig'/48088, l='MpServer', x=832.25, y=4.00, z=110.53], EntitySkeleton['Skeleton'/48091, l='MpServer', x=834.50, y=4.00, z=142.50], EntitySpider['Spider'/48090, l='MpServer', x=831.59, y=4.00, z=131.25], EntityCreeper['Creeper'/48093, l='MpServer', x=835.59, y=4.00, z=142.94], EntitySkeleton['Skeleton'/48092, l='MpServer', x=839.78, y=4.00, z=143.25], EntitySkeleton['Skeleton'/48095, l='MpServer', x=841.13, y=4.00, z=144.50], EntitySlime['Slime'/48094, l='MpServer', x=837.28, y=4.00, z=138.09], EntityCreeper['Creeper'/48096, l='MpServer', x=826.00, y=4.00, z=157.94], EntityCreeper['Creeper'/48097, l='MpServer', x=846.41, y=4.00, z=186.66], EntitySkeleton['Skeleton'/48102, l='MpServer', x=862.59, y=4.00, z=75.66], EntitySkeleton['Skeleton'/48103, l='MpServer', x=859.63, y=4.00, z=68.72], EntitySpider['Spider'/48101, l='MpServer', x=851.84, y=4.00, z=70.59], EntitySlime['Slime'/48106, l='MpServer', x=849.31, y=4.00, z=113.59], EntitySkeleton['Skeleton'/48107, l='MpServer', x=857.25, y=4.00, z=139.31], EntitySkeleton['Skeleton'/48104, l='MpServer', x=866.22, y=4.00, z=106.25], EntityCreeper['Creeper'/48105, l='MpServer', x=863.28, y=4.00, z=108.09], EntityCow['Cow'/48110, l='MpServer', x=860.84, y=4.00, z=153.94], EntityCow['Cow'/48111, l='MpServer', x=859.69, y=4.00, z=154.13], EntitySkeleton['Skeleton'/48108, l='MpServer', x=855.25, y=4.00, z=135.25], EntityCow['Cow'/48109, l='MpServer', x=861.88, y=4.00, z=151.97], EntitySheep['Sheep'/48266, l='MpServer', x=982.50, y=4.00, z=190.50], EntityPig['Pig'/48115, l='MpServer', x=863.38, y=4.00, z=144.63], EntitySheep['Sheep'/48267, l='MpServer', x=983.22, y=4.00, z=188.09], EntityChicken['Chicken'/48114, l='MpServer', x=861.78, y=4.00, z=153.34], EntityChicken['Chicken'/48113, l='MpServer', x=862.47, y=4.00, z=140.56], EntityChicken['Chicken'/48112, l='MpServer', x=861.81, y=4.00, z=147.97], EntitySheep['Sheep'/48268, l='MpServer', x=984.50, y=4.00, z=188.28], EntitySheep['Sheep'/48269, l='MpServer', x=976.28, y=4.00, z=182.13], EntitySlime['Slime'/48116, l='MpServer', x=840.12, y=4.00, z=148.53], EntityCow['Cow'/48258, l='MpServer', x=979.84, y=4.00, z=141.94], EntityCow['Cow'/48259, l='MpServer', x=976.88, y=4.00, z=149.84], EntityChicken['Chicken'/48256, l='MpServer', x=978.59, y=4.00, z=97.53], EntityChicken['Chicken'/48257, l='MpServer', x=967.59, y=4.00, z=111.41], EntityChicken['Chicken'/48262, l='MpServer', x=978.91, y=4.00, z=148.22], EntityChicken['Chicken'/48261, l='MpServer', x=984.44, y=4.00, z=154.44], EntitySpider['Spider'/48062, l='MpServer', x=830.97, y=4.00, z=62.78], EntitySkeleton['Skeleton'/48176, l='MpServer', x=917.91, y=4.00, z=166.31], EntitySpider['Spider'/48177, l='MpServer', x=921.84, y=4.00, z=161.47], EntitySpider['Spider'/48183, l='MpServer', x=936.53, y=4.00, z=51.22], EntitySpider['Spider'/48184, l='MpServer', x=929.44, y=4.00, z=74.22], EntitySheep['Sheep'/48185, l='MpServer', x=939.13, y=4.00, z=142.84], EntitySheep['Sheep'/48186, l='MpServer', x=937.84, y=4.00, z=144.16], EntitySpider['Spider'/48187, l='MpServer', x=939.50, y=4.00, z=151.91], EntityCreeper['Creeper'/48188, l='MpServer', x=934.13, y=4.00, z=152.25], EntityZombie['Zombie'/48189, l='MpServer', x=935.50, y=4.00, z=169.50], EntitySpider['Spider'/48161, l='MpServer', x=908.08, y=4.00, z=115.82], EntitySkeleton['Skeleton'/48163, l='MpServer', x=892.84, y=4.00, z=168.53], EntitySpider['Spider'/48162, l='MpServer', x=902.78, y=4.00, z=164.25], EntityCreeper['Creeper'/48173, l='MpServer', x=924.03, y=4.00, z=68.28], EntitySpider['Spider'/48175, l='MpServer', x=926.09, y=4.00, z=156.44], EntityZombie['Zombie'/48174, l='MpServer', x=929.34, y=4.00, z=140.91], EntityZombie['Zombie'/48158, l='MpServer', x=888.50, y=4.00, z=181.50], EntitySpider['Spider'/48159, l='MpServer', x=889.13, y=4.00, z=186.53], EntityZombie['Zombie'/48156, l='MpServer', x=882.00, y=4.00, z=111.06], EntitySpider['Spider'/48157, l='MpServer', x=880.34, y=4.00, z=107.25], EntitySpider['Spider'/48135, l='MpServer', x=875.97, y=4.00, z=110.16], EntitySkeleton['Skeleton'/48134, l='MpServer', x=868.31, y=4.00, z=67.75], EntityZombie['Zombie'/48133, l='MpServer', x=873.78, y=4.00, z=32.72], EntityPig['Pig'/48139, l='MpServer', x=870.06, y=4.00, z=139.16], EntityPig['Pig'/48138, l='MpServer', x=868.50, y=4.00, z=139.50], EntitySkeleton['Skeleton'/48137, l='MpServer', x=867.91, y=4.00, z=127.63], EntityCreeper['Creeper'/48136, l='MpServer', x=873.56, y=4.00, z=112.00], EntitySpider['Spider'/48143, l='MpServer', x=881.25, y=4.00, z=157.22], EntityZombie['Zombie'/48142, l='MpServer', x=875.78, y=4.00, z=136.31], EntityChicken['Chicken'/48141, l='MpServer', x=872.38, y=4.00, z=132.63], EntityPig['Pig'/48140, l='MpServer', x=864.25, y=4.00, z=142.91], EntityCreeper['Creeper'/48244, l='MpServer', x=976.50, y=4.00, z=66.50], EntityCreeper['Creeper'/48245, l='MpServer', x=983.16, y=4.00, z=69.25], EntityChicken['Chicken'/48246, l='MpServer', x=980.56, y=4.00, z=90.56], EntityChicken['Chicken'/48247, l='MpServer', x=978.50, y=4.00, z=85.50], EntityChicken['Chicken'/48240, l='MpServer', x=977.59, y=4.00, z=81.44], EntityHorse['Horse'/48241, l='MpServer', x=977.91, y=4.00, z=73.50], EntityHorse['Horse'/48242, l='MpServer', x=978.13, y=4.00, z=70.13], EntityHorse['Horse'/48243, l='MpServer', x=979.50, y=4.00, z=69.50], EntityHorse['Horse'/48253, l='MpServer', x=984.66, y=4.00, z=100.34], EntityChicken['Chicken'/48254, l='MpServer', x=982.50, y=4.00, z=98.50], EntityChicken['Chicken'/48255, l='MpServer', x=982.75, y=4.00, z=99.91], EntityChicken['Chicken'/48248, l='MpServer', x=976.50, y=4.00, z=84.50], EntitySkeleton['Skeleton'/48249, l='MpServer', x=977.16, y=4.00, z=80.25], EntityChicken['Chicken'/48250, l='MpServer', x=977.47, y=4.00, z=95.53], EntityHorse['Horse'/48251, l='MpServer', x=978.97, y=4.00, z=98.88], EntitySheep['Sheep'/48229, l='MpServer', x=971.97, y=4.00, z=186.94], EntitySpider['Spider'/48228, l='MpServer', x=975.00, y=4.00, z=169.94], EntityChicken['Chicken'/48225, l='MpServer', x=981.47, y=4.00, z=143.53], EntityCow['Cow'/48224, l='MpServer', x=958.97, y=4.00, z=152.09], EntityCow['Cow'/48227, l='MpServer', x=974.81, y=4.00, z=159.78], EntityChicken['Chicken'/48226, l='MpServer', x=972.44, y=4.00, z=156.56], EntitySheep['Sheep'/48237, l='MpServer', x=980.56, y=4.00, z=75.13], EntitySheep['Sheep'/48239, l='MpServer', x=976.50, y=4.00, z=72.50], EntitySheep['Sheep'/48238, l='MpServer', x=980.50, y=4.00, z=72.50], EntityClientPlayerMP['Loothor'/48311, l='MpServer', x=905.59, y=5.62, z=110.08], EntityChicken['Chicken'/48222, l='MpServer', x=971.56, y=4.00, z=84.59], EntityChicken['Chicken'/48223, l='MpServer', x=973.41, y=4.00, z=102.59], EntityCreeper['Creeper'/48220, l='MpServer', x=974.50, y=4.00, z=65.50], EntitySheep['Sheep'/48221, l='MpServer', x=971.59, y=4.00, z=73.94], EntityZombie['Zombie'/48218, l='MpServer', x=974.38, y=4.00, z=77.13], EntitySkeleton['Skeleton'/48219, l='MpServer', x=967.50, y=4.00, z=74.50], EntityHorse['Horse'/48216, l='MpServer', x=965.41, y=4.00, z=62.19], EntitySpider['Spider'/48217, l='MpServer', x=974.38, y=4.00, z=62.75], EntitySheep['Sheep'/48199, l='MpServer', x=944.03, y=4.00, z=153.06], EntityCreeper['Creeper'/48198, l='MpServer', x=953.25, y=4.00, z=137.84], EntitySpider['Spider'/48197, l='MpServer', x=953.28, y=4.00, z=101.47], EntitySpider['Spider'/48196, l='MpServer', x=958.84, y=4.00, z=97.41], EntitySkeleton['Skeleton'/48195, l='MpServer', x=955.22, y=4.00, z=90.56], EntityPig['Pig'/48207, l='MpServer', x=951.34, y=4.00, z=160.81], EntityPig['Pig'/48206, l='MpServer', x=960.13, y=4.00, z=138.09], EntitySheep['Sheep'/48205, l='MpServer', x=948.22, y=4.00, z=146.50], EntityCow['Cow'/48204, l='MpServer', x=945.25, y=4.00, z=145.41], EntityCow['Cow'/48203, l='MpServer', x=954.69, y=4.00, z=156.78], EntityCow['Cow'/48202, l='MpServer', x=951.06, y=4.00, z=150.03], EntityCow['Cow'/48201, l='MpServer', x=949.50, y=4.00, z=153.50], EntityPig['Pig'/48200, l='MpServer', x=950.47, y=4.00, z=159.66]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:368)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2382)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:864)
+	at net.minecraft.client.main.Main.main(SourceFile:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_60, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1162161256 bytes (1108 MB) / 2198339584 bytes (2096 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 2 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx4G
+	AABB Pool Size: 30855 (1727880 bytes; 1 MB) allocated, 2033 (113848 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 15, tallocated: 95
+	FML: MCP v9.03 FML v7.2.207.1110 Minecraft Forge 10.12.1.1110 38 mods loaded, 38 mods active
+	mcp{9.03} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.2.207.1110} [Forge Mod Loader] (forge-1.7.2-10.12.1.1110.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.12.1.1110} [Minecraft Forge] (forge-1.7.2-10.12.1.1110.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AppliedEnergistics2-Core{rv0-beta-20} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.0} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ImmibisMicroblocks{58.1.1} [Immibis's Microblocks] (immibis-microblocks-58.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.1} [Not Enough Items] (NotEnoughItems-1.7.2-1.0.1-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	bspkrsCore{6.9} [bspkrsCore] ([1.7.2]bspkrsCore-universal-6.9.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ArmorStatusHUD{1.26} [ArmorStatusHUD] ([1.7.2]ArmorStatusHUD-client-1.26.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	reiminimap{1.7.2-1.4} [ReiMinimap - Forge] ([1.7.2]ReiMinimap_v3.4_03beta.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Treecapitator{1.7.2} [Treecapitator] ([1.7.2]Treecapitator-universal-2.0.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IC2{2.1.478-experimental} [IndustrialCraft 2] (industrialcraft-2-2.1.478-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ImmibisCore{58.1.1} [Immibis Core] (immibis-core-58.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AdvancedMachines{58.2.0} [Advanced Machines] (advanced-machines-58.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core{6.0.16} [BuildCraft] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	appliedenergistics2{rv0-beta-20} [Applied Energistics 2] (appliedenergistics2-rv0-beta-20.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ArchimedesShips{1.7.2 v1.6.1} [Archimedes' Ships] (ArchimedesShips-1.6.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders{6.0.16} [BC Builders] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy{6.0.16} [BC Energy] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory{6.0.16} [BC Factory] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport{6.0.16} [BC Transport] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon{6.0.16} [BC Silicon] (buildcraft-6.0.16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CarpentersBlocks{3.1.5} [Carpenter's Blocks] (Carpenter's Blocks v3.1.5 - MC 1.7+.zip) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CompactSolars{4.4.32.311} [Compact Solar Arrays] (CompactSolars-1.7.2-4.4.32.311-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ComputerCraft{1.64pr2} [ComputerCraft] (ComputerCraft1.64pr2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DeathChest{1.7.2} [Death Chest] (Death.Chest.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	eplus{1.7.2-2.0.1.6} [Enchanting Plus] (EnchantingPlus-1.7.2-2.0.1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	extracells{2.0.8} [ExtraCells] (ExtraCells-2.0.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IronChest{6.0.26.721} [Iron Chest] (ironchest-1.7.2-6.0.26.721-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	LiquidXP{58.1.1} [Liquid XP] (liquid-xp-58.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Mystcraft{@VERSION@} [Mystcraft] (mystcraft-1.7.2-0.10.14.00.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedLogic{58.1.2} [RedLogic] (redlogic-58.1.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenComputers|Core{1.0.0} [OpenComputers (Core)] (OpenComputers-MC1.7.2-1.2.12.144-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenComputers{1.2.12.144} [OpenComputers] (OpenComputers-MC1.7.2-1.2.12.144-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Railcraft{9.0.0.0} [Railcraft] (Railcraft_1.7.2-9.0.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RIO{@VERSION@} [RemoteIO] (RemoteIO-1.7.2-1.0.1-b9-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	smoothbedrock{2.0.11.77} [SmoothBedrock] (SmoothBedrock-1.7.2-2.0.11.77.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TwilightForest{2.0.3} [The Twilight Forest] (twilightforest-1.7.2-2.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AE2 Version: beta rv0-beta-20 for Forge 10.12.0.1024
+	AE2 Integration: RotaryCraft:OFF, IC2:ON, RC:ON, BC:ON, MJ5:ON, MJ6:ON, RF:OFF, InvTweaks:OFF, MFR:OFF, DSU:OFF, FZ:OFF, Waila:OFF, CLApi:OFF, RB:OFF, InvTweaks:OFF, NEI:ON, CraftGuide:OFF, FMP:OFF
+	Launched Version: 1.7.2-Forge10.12.1.1110
+	LWJGL: 2.9.0
+	OpenGL: AMD Radeon HD 7900 Series GL version 4.4.12874 Compatibility Profile Context 14.100.0.0, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [Sphax_BuildCraft_128x.zip, Sphax_IC2_EXP_128x.zip, Sphax_IronChests_128x.zip, Sphax_NEI_512x-64x.zip, Sphax_RailCraft_128x.zip, Sphax PureBDcraft 128x MC17.zip, SkyStoneUpdate.zip, Sphax_CarpentersBlocks_128x.zip, Sphax_AppliedEnergistics2_128x.zip]
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 307 (17192 bytes; 0 MB) allocated, 303 (16968 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)</pre></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<!-- Gen Time 0.014497995376587 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/Tracker/?viewLog=1959 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:32 GMT -->
+</html>

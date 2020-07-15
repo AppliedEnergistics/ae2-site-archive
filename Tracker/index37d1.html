@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/Tracker/?viewLog=2937 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>Tracker - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/favicon.png" />
+		<meta name="description" content="Applied Energistics is a Minecraft Mod which contains an advanced storage system called ME that lets you store items compactly and in the way you want, as well as do intricate automation."/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/site.css" rel="stylesheet">
+    <link href="../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/Tracker/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <div style="margin:10px;"><h3>Viewing Log:</h3><pre>---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 7/26/14 9:41 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.NoSuchMethodError: appeng.api.recipes.IRecipeHandler.registerHandlers()V
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:162)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:692)
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:288)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:541)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:273)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:363)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:165)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+Caused by: java.lang.NoSuchMethodError: appeng.api.recipes.IRecipeHandler.registerHandlers()V
+	at extracells.proxy.CommonProxy.addRecipes(CommonProxy.java:32)
+	at extracells.Extracells.init(Extracells.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:513)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.initializeMods(Loader.java:691)
+	... 18 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_65, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2469267616 bytes (2354 MB) / 3041918976 bytes (2901 MB) up to 3041918976 bytes (2901 MB)
+	Mod Pack: Unknown / None
+	LiteLoader Mods: 1 loaded mod(s)
+          - VoxelMap version 1.2.1
+	LaunchWrapper: 46 active transformer(s)
+          - Transformer: cpw.mods.fml.common.asm.transformers.PatchingTransformer
+          - Transformer: com.mumfrey.liteloader.transformers.event.EventProxyTransformer
+          - Transformer: com.mumfrey.liteloader.launch.LiteLoaderTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.CrashReportTransformer
+          - Transformer: optifine.OptiFineClassTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.MarkerTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.SideTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.EventSubscriptionTransformer
+          - Transformer: appeng.transformer.asm.ASMIntegration
+          - Transformer: codechicken.lib.asm.ClassHeirachyManager
+          - Transformer: codechicken.core.asm.InterfaceDependancyTransformer
+          - Transformer: codechicken.core.asm.TweakTransformer
+          - Transformer: codechicken.core.asm.DelegatedTransformer
+          - Transformer: codechicken.core.asm.DefaultImplementationTransformer
+          - Transformer: mods.immibis.microblocks.coremod.MicroblockSupporterTransformer
+          - Transformer: mods.immibis.microblocks.crossmod.MicroblocksBCTransformer
+          - Transformer: invtweaks.forge.asm.ContainerTransformer
+          - Transformer: codechicken.nei.asm.NEITransformer
+          - Transformer: tconstruct.preloader.ASMInterfaceRepair
+          - Transformer: tconstruct.preloader.AccessTransformers
+          - Transformer: portablejim.veinminer.asm.ItemInWorldManagerTransformer
+          - Transformer: factorization.coremod.ASMTransformer
+          - Transformer: factorization.coremod.AirInspector
+          - Transformer: cpw.mods.fml.common.asm.transformers.DeobfuscationTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.AccessTransformer
+          - Transformer: net.minecraftforge.transformers.ForgeAccessTransformer
+          - Transformer: appeng.transformer.asm.ASMTweaker
+          - Transformer: codechicken.core.asm.CodeChickenAccessTransformer
+          - Transformer: factorization.coremod.FzAccessTransformer
+          - Transformer: invtweaks.forge.asm.ITAccessTransformer
+          - Transformer: tconstruct.preloader.AccessTransformers
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAccessTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.TerminalTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.LiteLoaderEventInjectionTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.LiteLoaderCallbackInjectionTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.JoinGamePacketTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.ServerChatPacketTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.LoginSuccessPacketTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.ChatPacketTransformer
+          - Transformer: com.thevoxelbox.voxelmap.litemod.VoxelMapTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.ServerCustomPayloadPacketTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.CustomPayloadPacketTransformer
+          - Transformer: com.mumfrey.liteloader.client.transformers.MinecraftOverlayTransformer
+          - Transformer: cpw.mods.fml.common.asm.transformers.ModAPITransformer
+          - Transformer: mods.immibis.core.impl.MultiInterfaceClassTransformer
+          - Transformer: mods.immibis.core.impl.TraitTransformer
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms3072m -Xmx3072m -XX:PermSize=256m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.24.1187 Minecraft Forge 10.13.0.1187 Optifine OptiFine_1.7.10_HD_U_A4 69 mods loaded, 69 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	FML{7.10.24.1187} [Forge Mod Loader] (forge-1.7.10-10.13.0.1187.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Forge{10.13.0.1187} [Minecraft Forge] (forge-1.7.10-10.13.0.1187.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	appliedenergistics2-core{rv1-alpha-24} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	CodeChickenCore{1.0.2.11} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ImmibisMicroblocks{59.0.0} [Immibis's Microblocks] (Immibiss-Microblocks-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NotEnoughItems{1.0.2.30} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.2.30-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	TConstruct-Preloader{0.1.1} [Tinkers Corestruct] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	VeinMiner_coremod{null_build-null} [Core mod] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Core{6.0.17} [BuildCraft] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	IC2{2.2.513-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.513-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	EnderIO{2.0_beta} [Ender IO] (enderio-2.0_beta.136.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	UniversalElectricity{@MAJOR@.@MINOR@.@REVIS@} [Universal Electricity] (universal-electricity-4.0.0.9-core.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ForgeMultipart{1.1.0.298} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.0.298-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ExtraUtilities{1.1.0c} [Extra Utilities] (extrautilities-1.1.0c.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Builders{6.0.17} [BC Builders] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Energy{6.0.17} [BC Energy] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Factory{6.0.17} [BC Factory] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiomesOPlenty{2.0.2} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.0.2.897-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Forestry{2.4.2.30} [Forestry for Minecraft] (forestry_1.7.10-2.4.2.30.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Railcraft{9.1.0.0} [Railcraft] (Railcraft_1.7.2-9.1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Mekanism{7.0.0} [Mekanism] (Mekanism-1.7.10-7.0.0.70.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	appliedenergistics2{rv1-alpha-24} [Applied Energistics 2] (appliedenergistics2-rv1-alpha-24.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Backpack{2.0.0} [Backpack] (Backpacks-Mod.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	bdlib{1.4.0.3} [BD Lib] (bdlib-mc1710-1.4.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BiblioCraft{1.7.4} [BiblioCraft] (BiblioCraft[v1.7.4][MC1.7.10].jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Transport{6.0.17} [BC Transport] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	BuildCraft|Silicon{6.0.17} [BC Silicon] (buildcraft-6.0.17.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	CarpentersBlocks{3.2.5} [Carpenter's Blocks] (Carpenter's Blocks v3.2.5 [DEV] - MC 1.7.10.zip) Unloaded->Constructed->Pre-initialized->Initialized
+	chisel{1.5.6} [Chisel] (Chisel-1.7.10-1.5.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	CompactSolars{4.4.36.313} [Compact Solar Arrays] (CompactSolars-1.7.10-4.4.36.313-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	EnderStorage{1.4.4.10} [EnderStorage] (EnderStorage-1.7.10-1.4.4.10-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Waila{1.5.3} [Waila] (Waila-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	extracells{2.1.6} [ExtraCells] (ExtraCells-2.1.6.jar) Unloaded->Constructed->Pre-initialized->Errored
+	factorization.notify{1.0} [Factorization Notification System] (Factorization-1.7.10-0.8.85.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	factorization{1.7.10-0.8.85} [Factorization] (Factorization-1.7.10-0.8.85.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	factorization.misc{1.7.10-0.8.85} [Factorization Miscellaneous Nonsense] (Factorization-1.7.10-0.8.85.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	gendustry{1.3.0.3} [GenDustry] (gendustry-mc1710-1.3.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ImmibisCore{59.0.1} [Immibis Core] (immibis-core-59.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	inventorytweaks{1.58-dev-139-7d397cb} [Inventory Tweaks] (InventoryTweaks-1.58-dev-139.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	IronChest{6.0.41.729} [Iron Chest] (ironchest-1.7.10-6.0.41.729-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Mantle{1.7.10-165.4bc3343} [Mantle] (Mantle_mc1.7.10_0.3.0.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	MekanismGenerators{7.0.0} [MekanismGenerators] (MekanismGenerators-1.7.10-7.0.0.70.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	MekanismTools{7.0.0} [MekanismTools] (MekanismTools-1.7.10-7.0.0.70.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ResonantEngine{@MAJOR@.@MINOR@.@REVIS@} [Resonant Engine] (resonant-engine-2.0.0.32-core.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	MFFS{@MAJOR@.@MINOR@.@REVIS@} [Modular Force Field System] (mffs-4.0.0.18-core.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NEIAddons{1.12.0.1} [NEI Addons] (neiaddons-mc1710-1.12.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NEIAddons|ExtraBees{1.12.0.1} [NEI Addons: Extra Bees] (neiaddons-mc1710-1.12.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NEIAddons|Forestry{1.12.0.1} [NEI Addons: Forestry] (neiaddons-mc1710-1.12.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NEIAddons|CraftingTables{1.12.0.1} [NEI Addons: Crafting Tables] (neiaddons-mc1710-1.12.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	NEIAddons|ExNihilo{1.12.0.1} [NEI Addons: Ex Nihilo] (neiaddons-mc1710-1.12.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	PowerConverters{1.7.10-2.5.0.20} [Power Converters] (PowerConverters-1.7.10-2.5.0.20.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Core{4.4.5.44} [ProjectRed] (ProjectRed-Base-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Transmission{4.4.5.44} [ProjectRed-Transmission] (ProjectRed-Integration-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Transportation{4.4.5.44} [ProjectRed-Transportation] (ProjectRed-Mechanical-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Exploration{4.4.5.44} [ProjectRed-Exploration] (ProjectRed-World-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	TConstruct{1.7.10-1.6.0.jenkins541} [Tinkers' Construct] (TConstruct_mc1.7.10_1.6.0d35.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Compatibility{4.4.5.44} [ProjectRed-Compatibility] (ProjectRed-Compat-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Integration{4.4.5.44} [ProjectRed-Integration] (ProjectRed-Integration-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Illumination{4.4.5.44} [ProjectRed-Illumination] (ProjectRed-Lighting-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ProjRed|Expansion{4.4.5.44} [ProjectRed-Expansion] (ProjectRed-Mechanical-1.7.10-4.4.5.44.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	QuarryPlus{1.7.10-1.5.7.6} [QuarryPlus] (QuarryPlus-1.7.10-1.5.7.6.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	RIO{1.1.0} [RemoteIO] (Remote-IO-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	bspkrsCore{6.9} [bspkrsCore] ([1.7.2]bspkrsCore-universal-6.9.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	Treecapitator{1.7.2} [Treecapitator] (Tree-Capitator-Mod-1.7.2.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	VeinMiner{0.16.1} [Vein Miner] (Vein-Miner-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	VeinMinerModSupport{0.16.1} [Mod Support] (Vein-Miner-Mod-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	McMultipart{1.1.0.298} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.0.298-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	ForgeMicroblock{1.1.0.298} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.0.298-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized
+	AE2 Version: alpha rv1-alpha-24 for Forge 10.13.0.1162
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	TConstruct Environment: Environment healthy.</pre></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<!-- Gen Time 0.0068070888519287 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/Tracker/?viewLog=2937 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:38 GMT -->
+</html>

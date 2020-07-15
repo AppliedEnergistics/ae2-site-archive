@@ -1,0 +1,635 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/Tracker/0940/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>Tracker - Item #0940 - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/favicon.png" />
+		<meta name="description" content="Closed Bug #0940 - Auto Crafting not working in some Situations"/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/site.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/site.css" rel="stylesheet">
+    <link href="../../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/Tracker/0940/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <ul class="Tracker navversion nav nav-tabs"></ul><div style="margin-top:20px;" class="container trackerTracker"><div class="Window WindowPane" style="margin-top:5px;">
+		<div class="WindowPaneInternal">
+			<form action="http://ae-mod.info/Tracker/0940/" method="post">
+				<input type="hidden" name="ReqNum" value="68" / > 
+				<input type="hidden" name="Offset" value=""/>
+				<h3 class="bugLine">Bug: #0940 - Auto Crafting not working in some Situations</h3>
+				<table cellspacing="1" width="100%">
+					<tr>
+						<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+						<td class="trackTD" style="padding:0px;">
+														<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr><td class="bugHeader" width="90">Tracker ID:</td><td class="bugData" align="left">#0940</td></tr>
+							</table>
+							<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr>
+									<td class="bugHeader" width="90">Type:</td><td class="bugData" align="left">Bug</td>
+								</tr>
+							</table>
+															<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">MC Version:</td><td class="bugData" align="left">1.7.10</td>
+									</tr>
+								</table>
+																						<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">AE Version:</td><td class="bugData" align="left">rv1-beta-6</td>
+									</tr>
+								</table>
+														<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+								<tr>
+									<td class="bugHeader" width="90">Created:</td><td class="bugData" align="left"><time datetime="2014-08-20T07:29:10+00:00">2014-08-20 02:29 CDT</time></td>
+								</tr>
+							</table>
+																						<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Message:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">What is happening?
+
+I'm having a difficult time nailing down the exact circumstances but Auto-crafting doesn't work when multiple interfaces are attached to a single assembler. Queueing a craft job with a recipe in an interface attached to an assembler with multiple other interfaces attached to it does not start. Recipe doesn't matter; can be simple or complicated.
+
+While the crafting task is queued you can move the recipe from the interface that is not working to a different assembler with 1 interface attached and the crafting task will complete.
+
+
+Server or Single Player?:
+
+Single</div></td>
+									</tr>
+								</table>
+													</td>
+					</tr>
+				</table>
+				
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-20T15:13:16+00:00">2014-08-20 10:13 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Going to need more to go on here, my default setup in my test world has about 4 interfaces per assembler, and several of the assemblers are shared between 2 interfaces.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-21T09:38:28+00:00">2014-08-21 04:38 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I can give you a world download? I'm not sure how to better explain or get more info. It's really hit or miss if it will work or not. Is there something I can do to test it in my world for you?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-21T15:19:59+00:00">2014-08-21 10:19 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">We can try that.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T01:51:50+00:00">2014-08-21 20:51 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Ok, let me know what you'd like me to do then.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T02:08:44+00:00">2014-08-21 21:08 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">You'll just have to upload your world to dropbox or another file sharing service so I can download it.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T02:47:11+00:00">2014-08-21 21:47 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent"><a target="_blank" href="https://www.dropbox.com/s/h8rww9iv9uzd2uj/Jork Test.rar">https://www.dropbox.com/s/h8rww9iv9uzd2uj/Jork%20Test.rar</a></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:18:44+00:00">2014-08-22 00:18 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Couldn't find your setup, please provide coords.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:36:30+00:00">2014-08-22 00:36 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">That's because I'm an idiot.... lol. It's in mystcraft age 4. Sorry about that. There should be a book on the spawn island.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:37:23+00:00">2014-08-22 00:37 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I don't have mystcraft &gt;.&gt;</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:42:10+00:00">2014-08-22 00:42 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">K, do you have an email or something I can send you what you need?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:46:59+00:00">2014-08-22 00:46 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I would have preferred a setup in the overworld so I manage in dev easier, I got a copy of mystcraft,  I'll try again tomorrow.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:48:44+00:00">2014-08-22 00:48 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Can you move the data from the myst folder to the overworld folder?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:58:44+00:00">2014-08-22 00:58 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Actually that works surprisingly well..
+
+On the down side your setup has no storage or items for anything in my instance, : / what did you use for storage?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T05:59:54+00:00">2014-08-22 00:59 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Derr.. what? That doesn't sound right.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T06:02:08+00:00">2014-08-22 01:02 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">This is what my instance looks like, <a target="_blank" href="http://imgur.com/dJyJah9,N1HUH6m">http://imgur.com/dJyJah9,N1HUH6m</a> ( two pictures )</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T06:06:36+00:00">2014-08-22 01:06 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">That's bizarre. There should be storage in those drives. Obviously nothing else is there because the floor is from chisel I think? That Assembler in that first picture is the one that wasn't working for me and the ones to the left of that near the CPU's were working; using the same recipes.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T06:11:59+00:00">2014-08-22 01:11 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Because they're extra cells, cells.... =/</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T20:03:51+00:00">2014-08-22 15:03 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">I *think* I figured this out.... does the assembler need a direct connection to the AE network? It seems that if I have an assembler with 6 interfaces it doesn't work but if I knock one off and attach a cable to the assembler, it works. I thought you were supposed to be able to have 6 on each assembler?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T20:09:12+00:00">2014-08-22 15:09 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">the assembler needs power, part interfaces, and directional interfaces cannot transmit power ( in the facing direction ); however un-pointed interfaces can share power with adjacent blocks.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T20:27:18+00:00">2014-08-22 15:27 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Ok, that might be the issue then. Would it be feasible to have the part interfaces transmit power to the assemblers?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T20:28:41+00:00">2014-08-22 15:28 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Nope, because that would prevent you form using them with subnetworks. also its presently consistent with other bus like parts, where none of them do this.
+
+Transmitting power is the same as connecting; only exception to that is quartz fiber, which does sharing instead.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/Zaflis/index.html">Zaflis</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 08/02/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T23:03:57+00:00">2014-08-22 18:03 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Not sure if related to this bug, but what i get is crafting items are done but doesn't disappear from crafting task list.
+
+I have a setup of 5 inscribers, each have 1 ME interface to input items, and all of them output to 1 same interface. I'm assuming that i would have to output to the exact same interface i input from? What i have is crafting recipes where input item is for example gold ingot, and result is logic processor. The middlestep printed logic circuit is automated and the item goes through ME drive first.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-22T23:05:41+00:00">2014-08-22 18:05 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Every item on the crafting roster must be returned to the network to complete its step if your skipping a step you need to reflect that in your patterns, i'm not entirely sure what you mean however.
+
+alban987 - so I can close this?</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/b.no_avatar.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/alban987/index.html">alban987</a><div class="SmallUser">Type: Member</div><div class="SmallUser">Joined: 07/23/2014</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-23T01:45:59+00:00">2014-08-22 20:45 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Yeah I believe so</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				<div style="text-align:left;margin-top:25px;" class="bugLine">Comment</div>
+					<table style="margin-top:12px;" cellspacing="1" width="100%">
+						<tr>
+							<td class="trackTD" align="left" valign="top" width="200"><table style="margin-right:15px;white-space:nowrap;"><tr><td><div class="bAvatar" style="background-image:url(../../images/users/b.algorithmx2.jpg);"></div></td><td style="padding-left:15px;"><a href="../../Profile/AlgorithmX2/index.html">AlgorithmX2</a><div class="SmallUser">Type: Admin</div><div class="SmallUser">Joined: 12/31/2012</div></td></tr></table></td>
+							<td class="trackTD" style="padding:0px;">
+								<table cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" width="90">Posted:</td><td class="bugData" align="left"><time datetime="2014-08-23T02:16:17+00:00">2014-08-22 21:16 CDT</time></td>
+									</tr>
+								</table>
+								<table style="border-radius:0px;border-top:1px solid #ccc" cellspacing="0" width="100%">
+									<tr>
+										<td class="bugHeader" valign="top" width="90">Comment:</td><td class="bugData" style="white-space:pre-wrap;" align="left"><div class="BugContent">Marking as closed.</div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+											</form>
+		</div>
+		<a style="float:right;margin:5px;" href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues" class="btn btn-default">Back to List</a>
+		<div style="clear:both;"></div>
+	</div></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<!-- Gen Time 0.021912097930908 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/Tracker/0940/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:53:32 GMT -->
+</html>

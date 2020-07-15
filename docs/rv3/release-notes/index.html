@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from ae-mod.info/docs/rv3/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:39:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://www.w3.org/2005/10/profile">
+		<title>docs - rv3 - release notes - Applied Energistics</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://ae-mod.info/docs/rv3/release-notes/favicon.png" />
+		<meta name="description" content="Applied Energistics is a Minecraft Mod which contains an advanced storage system called ME that lets you store items compactly and in the way you want, as well as do intricate automation."/>
+		<base />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../js/site.js"></script>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/site.css" rel="stylesheet">
+    <link href="../../../assets/cache/sprites.css" rel="stylesheet"><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48996432-1', 'ae-mod.info');
+	  ga('send', 'pageview');
+
+	</script>
+  </head>
+  <body>
+  <nav class="navbar navbar-default" role="navigation">
+	 <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			 <span class="sr-only">Toggle navigation</span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+			 <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="../../../index.html">Applied Energistics 2</a>
+		</div>
+  
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" style="max-height:none;" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+		  <li><a href="../../../Frequently-Asked-Questions/index.html">FAQ</a></li>
+		  <li><a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues">Issue / Feature Tracker</a></li>
+		  <li><a href="../../../Downloads/index.html">Downloads</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			  <form action="http://ae-mod.info/Search/" method="get" id="searchBox" class="navbar-form navbar-left" role="search">
+				 <div class="form-group">
+					<input type="text" name="q" class="form-control" placeholder="Search">
+				 </div>
+				 <button type="submit" class="btn btn-default">go</button>
+			  </form>
+			 			  <li data-toggle="tooltip" data-placement="bottom" title="Login" id="login"><a id="loginDropdown" class="dropdown-toggle js-dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+				  <div class="dropdown-menu dropdown-form" id="login">
+						<form action="http://ae-mod.info/docs/rv3/release-notes/?process=login" method="post">
+							<div class="form-group">
+								<h3 style="margin-top:0px;">Login</h3>
+								<label for="exampleInputEmail1">Username</label>
+								<input class="form-control" type="text" name="Username" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Password</label>
+								<input class="form-control" type="password" name="Password" />
+							</div>
+							<div class="btnBox">	
+								<!--<a style="float:left" href="Register/" class="btn btn-info">Not a Member? Register</a>-->
+								<input type="submit" class="btn btn-primary" value="Login" />
+						  </div>
+					  </form>
+					</div>
+				</li>
+		  		  </ul>
+		</div><!-- /.navbar-collapse -->
+	 </div><!-- /.container-fluid -->
+  </nav>
+  <div id="WikiContent"><div class="container">
+		<div id="PageOptions">
+																	<a title="Print this Page" onclick="window.print();" class="IconPrint"><span class="glyphicon glyphicon-print"></span></a>
+		</div><!-- unable to find docs -->			<p><!-- ItemPart.StorageMonitor--><!-- ItemPart.StorageMonitor--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.StorageMonitor--><!-- ItemPart.StorageMonitor--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.Terminal--><!-- ItemPart.Terminal--><!-- ItemPart.AnnihilationPlane--><!-- ItemPart.AnnihilationPlane--><!-- ItemPart.ExportBus--><!-- ItemPart.ExportBus--><!-- ItemMaterial.CardCapacity--><!-- ItemMaterial.CardCapacity--><!-- ItemMaterial.CardSpeed--><!-- ItemMaterial.CardSpeed--><!-- ItemPart.Interface--><!-- ItemPart.Interface--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.ConversionMonitor--><!-- ItemPart.InterfaceTerminal--><!-- ItemPart.InterfaceTerminal--><!-- BlockInterface--><!-- BlockInterface--><!-- ItemPart.InterfaceTerminal--><!-- ItemPart.InterfaceTerminal--><!-- ItemCrystalSeed.Fluix--><!-- ItemCrystalSeed.Fluix--><!-- ItemCrystalSeed.Nether--><!-- ItemCrystalSeed.Nether--><h1>Applied Energistics rv3 Release Notes</h1>
+<p>AE2 rv3 is a&nbsp;<a href="http://en.wikipedia.org/wiki/Quality_of_life" target="_blank">QoL</a>&nbsp;version, where we try to improve the usage of Applied Energistics 2 for the end-user.</p>
+<p>&nbsp;</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="index.html#changes-improvements-and-features">Changes, Improvements and Features</a><br />
+<ul>
+<li><a href="index.html#noteworthy">Noteworthy</a></li>
+<li><a href="index.html#code-quality">Code quality</a></li>
+<li><a href="index.html#localization">Localization</a></li>
+</ul>
+</li>
+<li><a href="index.html#fixed-issues">Fixed issues</a></li>
+<li><a href="index.html#deprecation">Deprecation</a><br />
+<ul>
+<li><a href="index.html#deprecated-ilocatableregistry">Deprecated ILocatableRegistry.findLocatableBySerial( long )</a></li>
+</ul>
+</li>
+<li><a href="index.html#breaking-changes">Breaking changes</a><br />
+<ul>
+<li><a href="index.html#inscriber-api">Inscriber API</a></li>
+<li><a href="index.html#crystal-seeds">Crystal seeds recipes</a></li>
+<li><a href="index.html#pattern-substitution">Pattern ore dictionary substitution</a></li>
+<li><a href="index.html#recipes-reorganized">Updated/restructured recipe files</a></li>
+</ul>
+</li>
+<li><a href="index.html#known-issues">Known Issues</a></li>
+</ul>
+<p>&nbsp;</p>
+<h1><a id="changes-improvements-and-features"></a>Changes, Improvements and Features</h1>
+<p>&nbsp;</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/579/">GH-579</a>] P2P Tunnel for Open Computers (<a href="https://github.com/fnuecke" target="_blank">fnuecke</a>)</h2>
+<p>The creator of Open Computers added a P2P Tunnel to tunnel your OC cables.&nbsp;</p>
+<p><img src="http://i.imgur.com/VrKU6L1.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1404" target="_blank">GH-<span class="js-issue-title">1404</span></a>] AE2 Logo in Modlist (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>Nothing but a logo</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/12" target="_blank">GH-12</a>] Visual indicator for the lock state of monitors (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p><a name="inlineItemDescItemPartStorageMonitor_link" class="inlineItem" href="../../../ME-Storage-Monitor/index.html">ME Storage Monitor</a> and <a name="inlineItemDescItemPartConversionMonitor_link" class="inlineItem" href="../../../ME-Conversion-Monitor/index.html">ME Conversion Monitor</a> are now having an visual indicator to show when they are locked.</p>
+<p>This also contains some slight improvments in their rendering performance.</p>
+<p><img src="http://i.imgur.com/sTqnch4.png" alt="" width="854" height="480" /></p>
+<p>Left ones are unlocked, right ones are locked.</p>
+<p>Top ones are <a name="inlineItemDescItemPartStorageMonitor_link" class="inlineItem" href="../../../ME-Storage-Monitor/index.html">ME Storage Monitor</a> and bottom ones <a name="inlineItemDescItemPartConversionMonitor_link" class="inlineItem" href="../../../ME-Conversion-Monitor/index.html">ME Conversion Monitor</a></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1259" target="_blank">GH-1259</a>] Crafting Jobs ETA (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>Both the GUI of a <a href="../../../Crafting-CPU/index.html">Crafting CPU</a> and <a name="inlineItemDescItemPartTerminal_link" class="inlineItem" href="../../../ME-Terminal/index.html">ME Terminal</a> are now displaying a estimated time for the completion of a job.</p>
+<p><img src="http://i.imgur.com/xNvuuRH.png" alt="" width="854" height="480" /></p>
+<p>&nbsp;<img src="http://i.imgur.com/lPF2Bm0.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1344" target="_blank">GH-1344</a>] Identity Annihilation Plane (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>The <a name="inlineItemDescItemPartAnnihilationPlane_link" class="inlineItem" href="../../../ME-Annihilation-Plane/index.html">ME Annihilation Plane</a> now features an upgraded version named Identity Annihilation Plane which provides a silk touch functionality.</p>
+<p><img src="http://i.imgur.com/c5XvTtP.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1452" target="_blank">GH-1452</a>] &amp; [<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1635" target="_blank">GH-1635</a>] Auto-generation of custom recipes (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>The&nbsp;<a href="../../../Custom-Recipes/index.html">custom recipes</a> of AE is now automatically exporting the recipes from the .jar file into the config folder for easier changing.</p>
+<p>The original recipes are exported into <code>generated-recipes</code> and will be overwritten with each start. To use our own recipes copy them into the <code>user-recipes</code> folder and modify them to your needs.</p>
+<p>It will also export the ore dictonary mappings into their own file for easy modifcations.</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1541" target="_blank">GH-1541</a>]&nbsp;Thermal Dynamics attunements (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>Thermal Dynamics ducts can now be used to attune P2P tunnels to RF, fluid or similar matching their own behaviour.</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1379" target="_blank">GH-1379</a>] Decorative Slabs (<a href="https://github.com/plumpudding" target="_blank">plumpudding</a>)</h2>
+<p>Additionally to the stairs introduced with rv2, all decorative blocks are now also available as slabs.</p>
+<p><img src="http://i.imgur.com/uTHP38I.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1513" target="_blank">GH-1513</a>] Improved&nbsp;CraftGuide Integration (<a href="https://github.com/Uristqwerty" target="_blank">Uristqwerty</a>)</h2>
+<p>The craftguide integration now supports Grind and Inscriber recipes as well as having a general improvement of the performance for creating the entries.</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/85" target="_blank">GH-85</a>] Round Robin and Random Export mode for Export Bus (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>The <a name="inlineItemDescItemPartExportBus_link" class="inlineItem" href="../../../ME-Export-Bus/index.html">ME Export Bus</a> in addition to completely export an item from a network before moving to the next one, it is now able to export the items in a round robin or random mode. Both additional modes are available with at least 1 <a name="inlineItemDescItemMaterialCardCapacity_link" class="inlineItem" href="../../../Capacity-Card/index.html">Capacity Card</a> inserted into it.</p>
+<p><a name="inlineItemDescItemMaterialCardSpeed_link" class="inlineItem" href="../../../Acceleration-Card/index.html">Acceleration Card</a> will still affect the exported amount per operation before moving to the next slot.</p>
+<p><img src="http://i.imgur.com/2A2vNoa.png" alt="" width="854" height="480" /></p>
+<p><img src="http://i.imgur.com/07HuKsO.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1862" target="_blank">GH-1862</a>] Interfaces now with 9 instead of 8 config slots (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p><a name="inlineItemDescItemPartInterface_link" class="inlineItem" href="../../../ME-Interface/index.html">ME Interface</a> and <a name="inlineItemDescItemPartConversionMonitor_link" class="inlineItem" href="../../../ME-Conversion-Monitor/index.html">ME Conversion Monitor</a> are now more consistent with all other machines and feature 9 slots instead of the odd 8.</p>
+<p><img src="http://i.imgur.com/xGtGEKs.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1891" target="_blank">GH-1891</a>] Patterns can now toggle ore dictionary usage (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p><a name="inlineItemDescItemPartInterfaceTerminal_link" class="inlineItem" href="../../../ME-Interface-Terminal/index.html">ME Interface Terminal</a> and&nbsp;<a name="inlineItemDescBlockInterface_link" class="inlineItem" href="../../../ME-Interface/index.html">ME Interface</a> now feature a option to enable or disable the ore dictionary to substitute any encoded recipe.</p>
+<p>The mode is displayed in the tooltip and can even be used to search inside an <a name="inlineItemDescItemPartInterfaceTerminal_link" class="inlineItem" href="../../../ME-Interface-Terminal/index.html">ME Interface Terminal</a>.</p>
+<p><strong>Existing patterns will have this option disabled. This can be easily changed by placing them into a pattern terminal and encode it again after toggling the option.</strong></p>
+<p><strong><img src="http://i.imgur.com/gcUmibH.png" alt="" width="854" height="640" /></strong></p>
+<p>&nbsp;</p>
+<p><img src="http://i.imgur.com/HMzFSTr.png" alt="" width="854" height="640" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1726" target="_blank">GH-1726</a>] PneumaticCraft Pressure P2P tunnel (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>P2P tunnels to transfer PneumaticCraft pressure are added, supporting up to 20 bar.</p>
+<p>Also try out the AE2 integration with logistic frames provided by PneumaticCraft itself.</p>
+<p><img src="http://i.imgur.com/1UDHHbO.png" alt="" width="854" height="480" /></p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1900" target="_blank">GH-1900</a>] Exporting of all available items into a CSV (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>The AE2 recipe system can export all available items and blocks registered within minecraft during the startup. These can for example be used to adapt the default recipes to your need.</p>
+<h2>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1805" target="_blank">GH-1805</a>] Reorganized recipes files (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>The custom recipes were reorganized in a more reasonable way. This includes splitting it up into smaller files and placing them into folders matching their feature types.</p>
+<p><strong>This can break custom made recipes, when the current ones are only extracted partly from the jar. When fully extracted, this will not be an issue.</strong></p>
+<h2><a id="noteworthy"></a>Noteworthy</h2>
+<p>Not less important, but less applicable to show-case:</p>
+<ul>
+<li><a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>:&nbsp;Meteorites can spawn in clay biomes [<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1438" target="_blank">GH-1438</a>]</li>
+<li><a href="https://github.com/yueh" target="_blank">yueh</a>:&nbsp;Hold backspace to clear search fields <span class="gh-header-number">[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1389" target="_blank">GH-1389</a>]</span></li>
+<li><a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>:&nbsp;Removes duplicate RF Tooltip on AE2 energy machines [<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1468" target="_blank">GH-1468</a>]</li>
+<li><a href="https://github.com/TheCricket" target="_blank">TheCricket</a>: Automation of Vibration Chambers with lava buckets [<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1633" target="_blank">GH-1633</a>]</li>
+</ul>
+<p>&nbsp;</p>
+<h2><a id="code-quality"></a>Code quality</h2>
+<p>Many changes were made to improve the overall code quality for the developer and user, including many&nbsp;typographical and grammatical errors.&nbsp;</p>
+<p>Credits to&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>, <a href="https://github.com/yueh" target="_blank">yueh</a> and more.</p>
+<p>&nbsp;</p>
+<h2><a id="localization"></a>Localization</h2>
+<p>We rely on external contributions for localizations.</p>
+<p>Here we want to thank&nbsp;<a href="https://github.com/XFRGod" target="_blank">XFRGod</a>,&nbsp;<a href="https://github.com/Mazdallier" target="_blank">Mazdallier</a>,&nbsp;<a href="https://github.com/bakaxyf" target="_blank">hbakaxyf</a>,&nbsp;<a href="https://github.com/asd0210a" target="_blank">asd0210a</a>,&nbsp;<a href="https://github.com/wlhlm">wlhlm</a> for providing updated localization files for 5 different languages, them being:</p>
+<ul>
+<li>Traditional Chinese</li>
+<li>Simplified Chinese</li>
+<li>Hungarian</li>
+<li>French</li>
+<li>German</li>
+</ul>
+<p>If you do not see your language here, feel free to improve it by submitting your changes to us.</p>
+<p>&nbsp;</p>
+<h1><a id="fixed-issues"></a>Fixed issues</h1>
+<ul>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1036" target="_blank">GH-1036</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: No longer invalidate the cache of MEMonitorIInventory on simulate.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1283" target="_blank">GH-1283</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: TickHandler / Callable memory leak</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1362" target="_blank">GH-1362</a>]&nbsp;<a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>:&nbsp;Parts display their name in WAILA</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1384" target="_blank">GH-1384</a>] <a href="https://github.com/jeremiahwinsley" target="_blank">jeremiahwinsley</a>: Implement AdvancedShaftPowerReceiver for RotaryCraft powersink.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1389" target="_blank">GH-1389</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Enabled repeatable keyboard events</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1411" target="_blank">GH-1411</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Adds recipes for stairs</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/pull/1432" target="_blank">GH-1432</a>]&nbsp;<a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>:&nbsp;Plumb potential memory leak</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1442/" target="_blank">GH-1442</a>]&nbsp;<a href="https://github.com/TheJulianJES" target="_blank">TheJulianJES</a>: Removes second player inventory in Inscriber</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1465" target="_blank">GH-1465</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Disassembling a&nbsp;Crafting Storage will yield the correct material</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1474" target="_blank">GH-1474</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Prevents crafting of disabled recipes and deletes invalid parts</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1481" target="_blank">GH-1481</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Single type storage cells block when you pull out all contents</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1510" target="_blank">GH-1510</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Networks with disabled channels no longer fail every 256 parts</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1517" target="_blank">GH-1517</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: improved performance of TESRWrapper</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1536" target="_blank">GH-1536</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Checking for all required BC classes</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1559" target="_blank">GH-1559</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Level Emitter with P:R alloy wire does not crash anymore</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1567" target="_blank">GH-1567</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Moved ETA to the title and also no longer display for empty jobs</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1574" target="_blank">GH-1574</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Light detector no longer emitting light</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1588" target="_blank">GH-1588</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Charged Certus Quartz Ore has its own oredictionary entry</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1599" target="_blank">GH-1599</a>]&nbsp;<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Removes preconditions for world data and children</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1601" target="_blank">GH-1601</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Crash when shift-clicking covered or dense cable into a crafting tableli&gt;</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1611" target="_blank">GH-1611</a>]<a href="https://github.com/yueh" target="_blank"> yueh</a>: Reset the lastUsedChannels on a gridstorage change</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1618" target="_blank">GH-1618</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Removed meta based rotation of CGA</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1646" target="_blank">GH-1646</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Save GridStorage properly</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1648" target="_blank">GH-1648</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Removes unecessary cast to BlockQuartzTorch</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1656" target="_blank">GH-1656</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Reduces the amount of block updates a controller sends.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1666" target="_blank">GH-1666</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Missing check for the memory card</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1673" target="_blank">GH-1673</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Removed overly defensive code and ensure GL state to be restored.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1686" target="_blank">GH-1686</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Let PlayerRegistry handle nonexistent players</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1706" target="_blank">GH-1706</a>]&nbsp;<a href="https://github.com/yueh" target="_blank">yueh</a>: Adds a test to disable unsupported BetterStorage integration</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1710" target="_blank">GH-1710</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Use the correct culling face for the meteor compass</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1728" target="_blank">GH-1728</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Mark the entity as dead before spawning overflow</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1710" target="_blank">GH-1710</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Meteorite compass wrong culling direction</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1718" target="_blank">GH-1728</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: AE2 Seeds Problem with GregTech</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1781" target="_blank">GH-1781</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: NPE in PartSharedItemBus after the target inventory is removed</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1787" target="_blank">GH-1787</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Locale critical code now uses the english local. Fixes Turkish Problem</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1791" target="_blank">GH-1791</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Some recipes are not working with rv3</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1806" target="_blank">GH-1806</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Inscriber missing presses due to wrong culling direction</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1810" target="_blank">GH-1810</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Removes a CompassReader once the world is unloaded</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1833" target="_blank">GH-1833</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Interface with Crafting Card stops filling 1 craft short if there's no storage for the item</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1850" target="_blank">GH-1850</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: NEI Handler doesn't support "SecondOptionalOutput" for the Grinder</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1865" target="_blank">GH-1865</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Annihilation Plane not correctly spawning overflow items</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1878" target="_blank">GH-1878</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: DimensionData not saved correctly</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1892" target="_blank">GH-1892</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Import bus not respecting the storable amount when importing</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1896" target="_blank">GH-1896</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Storage Montors are possibly rendering too often</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1905" target="_blank">GH-1905</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Export Buses and interfaces not respecting failed crafting requests</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1932" target="_blank">GH-1932</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: VersionChecker unhandled exceptions</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1970" target="_blank">GH-1970</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Rendering of a press in inscriber leave the GL engine in an improper state</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1973" target="_blank">GH-1973</a>] <a href="https://github.com/thatsIch" target="_blank">thatsIch</a>: Last slot of ME Interface ignores required work</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/1983" target="_blank">GH-1983</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: AE2 + Compact machine : Interface pattern list not saved after server reboot</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2010" target="_blank">GH-2010</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Improved logging</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2027" target="_blank">GH-2027</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Tiny TNT cannot be lit with flint and steel</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2043" target="_blank">GH-2043</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Storagebuses are now updated in the correct order</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2044" target="_blank">GH-2044</a>] <a href="https://github.com/yueh" target="_blank">yueh</a>: Grid connections exposing internal exceptions</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2087" target="_blank">GH-2087</a>] <a href="https://github.com/fnuecke" target="_blank">fnuecke</a>: OpenComputers Tunnels not correctly disconnecting the OC network.</li>
+<li>[<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/2091" target="_blank">GH-2091</a>] <a href="https://github.com/Adaptivity" target="_blank">Adaptivity</a>: Recipes update to use OreDictionary entries whereeever possible.</li>
+</ul>
+<p>&nbsp;</p>
+<h1><a id="deprecation"></a>Deprecation</h1>
+<p>Deprecated features are scheduled for removal in RV4 Stable.</p>
+<p>&nbsp;</p>
+<h2><a id="deprecated-ilocatableregistry"></a>Deprecated&nbsp;ILocatableRegistry.findLocatableBySerial( long )</h2>
+<p>Use&nbsp;<code><a href="../../../javadoc/appeng/api/features/ILocatableRegistry.html#getLocatableBy(long)" target="_blank">ILocatableRegistry.getLocatableBy( long )</a></code>&nbsp;instead. It will returrn an&nbsp;<code><a href="../../../javadoc/appeng/api/features/ILocatable.html" target="_blank">ILocatable</a></code>.</p>
+<p>The corresponding code for developers can be found&nbsp;<a href="https://github.com/thatsIch/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/features/ILocatableRegistry.java#L52-52" target="_blank">here</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><a id="breaking-changes"></a>Breaking changes</h1>
+<h2><a id="inscriber-api"></a>Inscriber API (<a href="https://github.com/thatsIch" target="_blank">thatsIch</a>)</h2>
+<p>In earlier versions, mods like MineTweaker had to&nbsp;<em>hack</em>&nbsp;into our code, to retrieve the data for inscribers, to modify the recipes or inject new recipes.&nbsp;</p>
+<p>The corresponding code for developers can be found&nbsp;<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/blob/rv2/src/api/java/appeng/api/features/IInscriberRegistry.java" target="_blank">here</a>.</p>
+<p><strong>Important:</strong></p>
+<ul>
+<li>You may need to update mods like MineTweaker.</li>
+</ul>
+<p>&nbsp;&nbsp;</p>
+<h2><a id="crystal-seeds"></a>Crystal seeds recipes (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>rv3 will contain a breaking bugfix regarding the recipes of <a name="inlineItemDescItemCrystalSeedFluix_link" class="inlineItem" href="../../../Fluix-Seed/index.html">Fluix Seed</a> and <a name="inlineItemDescItemCrystalSeedNether_link" class="inlineItem" href="../../../Nether-Quartz-Seed/index.html">Nether Quartz Seed</a>.</p>
+<p>This will result in existing patterns for these items maybe becoming invalid and need to be updated by placing them into a pattern terminal and encode it again.</p>
+<p>&nbsp;&nbsp;</p>
+<h2><a id="pattern-substitution"></a>Pattern ore dictionary substitution (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>rv3 will contain a breaking feature regarding patterns and allowing them to toggle the use of the ore dictionary.</p>
+<p>This will result in existing patterns having this option disabled and will not use ore dictionary to substitute any input material.</p>
+<h2><a id="recipes-reorganized"></a>Updated/restructured recipe files (<a href="https://github.com/yueh" target="_blank">yueh</a>)</h2>
+<p>rv3 will contain a breaking feature regarding the structure of its recipe files and how these are organized.</p>
+<p>They will now be located in a new directory within the config folder and are automatically extracted upon first launching it or enabling the config option to refresh.</p>
+<p>If you made changes to the recipes, simply copy any old file into the new directory.</p>
+<p>Partly extracted recipe files might not be correctly imported due to the default files being restructured. In this case it is recommended to simply extract any missing file from a rv2 .jar and add it to your recipes.</p>
+<h1><a id="known-issues"></a>Known issues</h1>
+<p>All known issues are listed on the tracker marked with&nbsp;<strong>type-bug</strong>&nbsp;in our&nbsp;<a href="https://github.com/AppliedEnergistics/Applied-Energistics-2/labels/type-bug" target="_blank">issue-tracker</a>.</p></p>
+			<table class="AvatarBox" width="100%"><tr>
+				<td style="text-align:right;">Last modified on 01/09/2016 04:05 PM CST<br/>By yueh</td>
+				<td width="55"><div class="aAvatar" style="background-image:url(../../../images/a.no_avatar.jpg);"></div></td>
+			</tr></table>
+		</div></div>
+	 <script  type="text/javascript">
+		$(function () {
+		  $('#Tab').tab('show')
+		  $('time').each( function() {
+			  var myDate = new Date( $(this).attr('datetime') );
+			  var diff = (myDate.getTimezoneOffset()/-60);
+			  if ( diff >= 0 ) diff = "+"+diff; 
+			  $(this).html( myDate.toLocaleString() + " GMT "+diff );
+		  } );
+		  
+		  $('#login').find('form').click(function (e) {
+			  e.stopPropagation();
+		  });
+		  
+		  $('.loginBtn').click(function (e) {
+			  $('li#login').addClass('open');
+			  e.stopPropagation();
+		  });
+		  
+		  $('.hasTooltip').tooltip();
+		})
+	 </script>
+	<div style="clear:both;padding:25px;margin:auto;">
+							<div style="width:789px;margin:auto;"><script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Ad -->
+			<ins class="adsbygoogle"
+				  style="display:inline-block;width:728px;height:90px"
+				  data-ad-client="ca-pub-7145769377773992"
+				  data-ad-slot="9061506663"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script></div>
+			</div>
+
+	<div style="margin:15px 0px;" id="footer">
+		<a href="../../../index.html#Copyright">Copyright</a> &copy; 2020 AlgorithmX2
+	</div>
+	
+		<div style="max-width:400px;" id="inlineItemDescItemPartStorageMonitor" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Storage Monitor" href="../../../ME-Storage-Monitor/index.html" class="large large_parts_ItemPart_StorageMonitor"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Storage Monitor</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartConversionMonitor" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Conversion Monitor" href="../../../ME-Conversion-Monitor/index.html" class="large large_parts_ItemPart_ConversionMonitor"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Conversion Monitor</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartTerminal" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Terminal" href="../../../ME-Terminal/index.html" class="large large_parts_ItemPart_Terminal"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Terminal</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartAnnihilationPlane" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Annihilation Plane" href="../../../ME-Annihilation-Plane/index.html" class="large large_parts_ItemPart_AnnihilationPlane"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Annihilation Plane</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartExportBus" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Export Bus" href="../../../ME-Export-Bus/index.html" class="large large_parts_ItemPart_ExportBus"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Export Bus</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemMaterialCardCapacity" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Capacity Card" href="../../../Capacity-Card/index.html" class="large large_items_ItemMaterial_CardCapacity"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Capacity Card</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemMaterialCardSpeed" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Acceleration Card" href="../../../Acceleration-Card/index.html" class="large large_items_ItemMaterial_CardSpeed"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Acceleration Card</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartInterface" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Interface" href="../../../ME-Interface/index.html" class="large large_parts_ItemPart_Interface"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Interface</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemPartInterfaceTerminal" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Interface Terminal" href="../../../ME-Interface-Terminal/index.html" class="large large_parts_ItemPart_InterfaceTerminal"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Interface Terminal</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescBlockInterface" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="ME Interface" href="../../../ME-Interface/index.html" class="large large_blocks_BlockInterface"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">ME Interface</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemCrystalSeedFluix" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Fluix Seed" href="../../../Fluix-Seed/index.html" class="large large_items_ItemCrystalSeed_Fluix"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Fluix Seed</div></td></tr></table>
+	</td></tr></table></div><div style="max-width:400px;" id="inlineItemDescItemCrystalSeedNether" class="fiWnd"><table class="popupDef" cellspacing="0" cellpadding="0"><tr><td>
+		<table><tr><td style="background:white;"><a title="Nether Quartz Seed" href="../../../Nether-Quartz-Seed/index.html" class="large large_items_ItemCrystalSeed_Nether"></a>
+		</td><td style="background:transparent;"><div style="white-space:nowrap;font-weight:bold;max-width:400px;">Nether Quartz Seed</div></td></tr></table>
+	</td></tr></table></div><!-- Gen Time 0.05765700340271 -->
+  </body>
+
+<!-- Mirrored from ae-mod.info/docs/rv3/release-notes/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2020 20:39:12 GMT -->
+</html>
